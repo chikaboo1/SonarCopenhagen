@@ -28,23 +28,26 @@ $resultInfo = mysql_query($contestantInfo);
 
       <script>
           function post(id){
-            // var voterID = document.getElementById(id).value;
-            // var contestantName = document.getElementById("");
             $.post('vote-upload.php', {posttest:id},
               function(data){
                 $('#result').html(data);
               });
           }
 
-          function addContestant(){
+          function add(){
             var firstName = document.getElementById('firstname').value;
             var lastName = document.getElementById('lastname').value;
             var email = document.getElementById('email').value;
-            var artistName = document.getElementById('firstname').value;
+            var artistName = document.getElementById('artistname').value;
+            var trackTitle = document.getElementById('tracktitle').value;
             var soundName = document.getElementById('soundname').value;
             var siteLink = document.getElementById('sitelink').value;
 
-            $
+
+
+            $.post('contestant-upload.php', {postFirstName:firstName, postLastName:lastName,postEmail:email,postArtistName:artistName,postTrackTitle:trackTitle,postSoundName:soundName,postSiteLink:siteLink}, function(data){
+                $('#result').html(data);
+            });
           }
       </script>
 
@@ -132,7 +135,7 @@ $resultInfo = mysql_query($contestantInfo);
         }
       </script>
 
-      <div id="result"></div>
+
 
 <!--
   Below we include the Login Button social plugin. This button uses
@@ -165,15 +168,19 @@ $resultInfo = mysql_query($contestantInfo);
       </div>
 
       <form>
-
-        <input type='text' id ='firstname' value = 'first name'>
-        <input type='text' id = 'lastname' value = 'last name'> <br>
-        <input type='text' id = 'email' value = 'email'> <br>
-        <input type='text' id = 'artistname' value = 'your artist name'> <br>
-        <input type="text" id = "soundname" value = 'your soundcloud name'> <br>
-        <input type="text" id = "sitelink" value = "the link to your soundcloud track"> <br>
-        <input type='button' value='submit' onclick="addContestant();">
+        First Name: <input type='text' id ='firstname'> <br>
+        Last Name: <input type='text' id = 'lastname'> <br>
+        Email: <input type='text' id = 'email'> <br>
+        Artist Name<input type='text' id = 'artistname'> <br>
+        Track Title <input type="text" id ='tracktitle'> <br>
+        Sound Cloud User Name<input type="text" id = "soundname"> <br>
+        Site Link<input type="text" id = "sitelink"> <br>
+        <input type='button' value='submit' onclick="add();">
       </form>
+
+
+      <div id="result"></div>
+
 
       <br><br><br><br>
 
