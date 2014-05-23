@@ -31,19 +31,19 @@
         <img class="playlist-text" src="images/playlist-text.png" alt="Our Playlists"/> 
         <div id="playlists">
           <p>
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Thursday</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Friday</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Saturday</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Sunday</a> /</p>
+            <a href="http://soundcloud.com/natasha-natarajan/sets/thursday" class="stratus">Thursday</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/friday" class="stratus">Friday</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/saturday" class="stratus">Saturday</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/sunday" class="stratus">Sunday</a> /</p>
           <p>
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Pumpehuset</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Huset</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Forum</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Lille Vega</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Store Vega</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Culturebox</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Loppen</a> / 
-            <a href="http://soundcloud.com/foofighters/rope" class="stratus">Rust</a> </p>
+            <a href="http://soundcloud.com/natasha-natarajan/sets/pumpehuset" class="stratus">Pumpehuset</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/huset" class="stratus">Huset</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/forum" class="stratus">Forum</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/lille-vega" class="stratus">Lille Vega</a> / 
+            <a href="https://soundcloud.com/natasha-natarajan/sets/vega" class="stratus">Store Vega</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/culturebox" class="stratus">Culturebox</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/loppen" class="stratus">Loppen</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/rust" class="stratus">Rust</a> </p>
         </div>
         
 
@@ -109,7 +109,7 @@
             <div id="homepage-competition" class="homepage-div desktop-show">
               <div class="homepage-title">
                 <h1>Competition</h1>
-                <p>5 Copenhagen artists will get the chance to perform at the festival this year but who will they be? We're running a competition where you, our audience, get to participate and decide who you think is an upcoming artist in the electronic dance music scene.</p>
+                <p>5 artists will get the chance to perform at the festival this year but who will they be? We're running a competition where you, our audience, get to participate and decide who you think is an upcoming artist in the electronic dance music scene.</p>
               </div>
             </div>
 

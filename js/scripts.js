@@ -12,16 +12,48 @@
 
     // });
 
+  	if($('#playlist-wrapper').css('width') === '100%'){
+
     $("#playlist-wrapper").toggle(
+
 		function()
 		{
 		    $('#playlist-wrapper').animate({left:'0'}, 200);
 		},
 		function()
-		{
-		    $('#playlist-wrapper').animate({left:'-37%%'}, 200);
-		});
 
+		{
+			
+		    $('#playlist-wrapper').animate({left:'-80%'}, 200);
+
+		}
+
+
+		);
+
+}
+
+else {
+
+	$("#playlist-wrapper").toggle(
+
+		function()
+		{
+		    $('#playlist-wrapper').animate({left:'0'}, 200);
+		},
+		function()
+
+		{
+			
+		    $('#playlist-wrapper').animate({left:'-37%%'}, 200);
+
+		}
+
+
+		);
+
+
+}
 
     // stratus player
  	$.stratus({
