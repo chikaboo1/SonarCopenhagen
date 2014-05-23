@@ -1,0 +1,223 @@
+/*
+=======================
+CSS RESETS
+=======================
+*/
+
+body,html, * {
+	width:100%;
+	padding:0;
+	margin:0;
+	 -moz-box-sizing: border-box; 
+	 -webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+
+}
+
+ul {
+	list-style-type: none;
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+
+button::-moz-focus-inner {
+		border:0;
+		padding:0
+	}
+
+button {
+		width:auto;
+		border:0 none;
+		margin:0;
+		padding:0;
+		background:transparent;
+		overflow:visible;
+		cursor:pointer;
+		/* Stupid IE */
+		#vertical-align:middle; /* IE6,IE7 */
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+/*
+=======================
+GENERAL
+=======================
+*/
+ 
+  @font-face {
+        font-family: 'icomoon';
+        src:url('../extras/icomoon.eot');
+        src:url('../extras/icomoon.eot?#iefix') format('embedded-opentype'),
+            url('../extras/icomoon.woff') format('woff'),
+            url('../extras/icomoon.ttf') format('truetype'),
+            url('../extras/icomoon.svg#icomoon') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+@font-face {
+font-family: 'Helvetica-Heavy';
+src: url(../extras/HelveticaNeueLTStd-Hv.otf) format ('opentype');
+}
+
+
+body {
+	 color:#333;
+	 font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size:1em;
+  padding-bottom:50px;
+}
+
+h1 {
+	font-family:'Helvetica-Heavy', sans-serif;
+	font-size; 1.5em;
+	margin:1em 0;
+	text-transform: uppercase;
+	color:#2e3192;
+}
+
+h1:before {
+    content: '\e600 ';
+    font-family: 'icomoon';
+    speak: none;
+}   
+
+h2 {
+	font-family:'Helvetica-Heavy', sans-serif;
+	font-size; 1.2em;
+	margin:0.5em 0;
+	color:#2e3192;
+}
+
+h3 {
+	font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", 
+  	Helvetica, Arial, "Lucida Grande", sans-serif;	font-size; 1.2em;
+  	font-weight:bold;
+	color:#2e3192;
+}
+
+.important-button {
+	background-color:#ff3f34;
+	padding:5px;
+	font-size:18px;
+	color:white !important;
+}
+
+
+a {
+	text-decoration:none;
+}
+
+a:visited {
+	color:white;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+#all-content-wrapper {
+	width:90%;
+	margin:auto;
+}
+
+.desktop-show {
+	display:none;
+}
+
+
+/*
+=======================
+PLAYLIST BOX
+=======================
+*/
+#playlist-wrapper {
+	position:fixed;
+	z-index:80;
+	top:60%;
+	left:-37%;
+	width:40%;
+	height:20%;
+	background-color:#2e3192;
+	color:white;
+
+}
+
+
+img.playlist-text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 300;
+	height: 100%;
+	width: auto;
+}
+
+#playlists {
+	padding:5%;
+	line-height: 2em;
+}
+
+
+/*
+=======================
+HEADER
+=======================
+*/
+
+
+#heading-wrapper {
+	margin-top:1em;
+	width:100%;
+}
+
+#main-logo, #header-text {
+	width:40%;
+	display:inline-block;
+	vertical-align: bottom;
+}
+
+#header-text{
+	padding-left:10px;
+}
+
+.buy-tickets {
+	color:white !important;
+	margin-top:0.3em;
+}
+
+/*
+=======================
+NAVIGATION
+=======================
+*/
+
+#navigation {
+	padding-top:20px;
+}
+
+.nav-item {
+	padding:5px 0;
+	border-top:1px solid #333;
+}
+
+li.nav-item a {
+	color:#333;
+}
+
+
+.nav-socialmedia{
+	width:30px;
+	height:auto;
+	padding: 10px 5px 0px 0px;
+}
+
