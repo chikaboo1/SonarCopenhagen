@@ -18,113 +18,91 @@ $resultInfo = mysql_query($contestantInfo);
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
          <script type="text/javascript" src="http://stratus.sc/stratus.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-              $.stratus({
-                links: 'https://soundcloud.com/natasha-natarajan/sets/vega'
-              });
-            });
-          </script>
-
-      <script>
-          function post(id){
-            $.post('vote-upload.php', {posttest:id},
-              function(data){
-                $('#result').html(data);
-              });
-          }
-
-          function add(){
-            var firstName = document.getElementById('firstname').value;
-            var lastName = document.getElementById('lastname').value;
-            var email = document.getElementById('email').value;
-            var artistName = document.getElementById('artistname').value;
-            var trackTitle = document.getElementById('tracktitle').value;
-            var soundName = document.getElementById('soundname').value;
-            var siteLink = document.getElementById('sitelink').value;
-
-
-
-            $.post('contestant-upload.php', {postFirstName:firstName, postLastName:lastName,postEmail:email,postArtistName:artistName,postTrackTitle:trackTitle,postSoundName:soundName,postSiteLink:siteLink}, function(data){
-                $('#result').html(data);
-            });
-          }
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $.stratus({
+            links: 'https://soundcloud.com/natasha-natarajan/sets/vega'
+          });
+        });
       </script>
+
+    <script>
+      function post(id){
+        var selection = "#" + id + " .votes" ;
+        $.post('vote-upload.php', {posttest:id},
+          function(data){
+            $(selection).replaceWith("<p class = 'votes'>" + data + "</p>");
+          });
+      }
+
+      function add(){
+        var firstName = document.getElementById('firstname').value;
+        var lastName = document.getElementById('lastname').value;
+        var email = document.getElementById('email').value;
+        var artistName = document.getElementById('artistname').value;
+        var trackTitle = document.getElementById('tracktitle').value;
+        var soundName = document.getElementById('soundname').value;
+        var siteLink = document.getElementById('sitelink').value;
+
+
+
+        $.post('contestant-upload.php', {postFirstName:firstName, postLastName:lastName,postEmail:email,postArtistName:artistName,postTrackTitle:trackTitle,postSoundName:soundName,postSiteLink:siteLink}, function(data){
+            $('#result').html(data);
+        });
+      }
+
+      function doLogin(id){
+        FB.getLoginStatus(function(response) {
+          if (response.status === 'connected') {
+            post(id);
+            // connected
+          } else if (response.status === 'not_authorized') {
+            // not_authorized
+            login(id);
+          } else {
+            // not_logged_in
+            login(id);
+          }
+        });
+      }
+
+      function login(id){
+        FB.login(function(response){
+          post(id);
+        });
+      }
+
+      function logOut(){
+        FB.logout(function(response){
+          alert("you have been logged out");
+        });
+      }
+
+
+    </script>
 
       </head>
 
       <body>
       <script>
-        // This is called with the results from from FB.getLoginStatus().
-        function statusChangeCallback(response) {
-          console.log('statusChangeCallback');
-          console.log(response);
-          // The response object is returned with a status field that lets the
-          // app know the current login status of the person.
-          // Full docs on the response object can be found in the documentation
-          // for FB.getLoginStatus().
-          if (response.status === 'connected') {
-            // Logged into your app and Facebook.
-            testAPI();
-          } else if (response.status === 'not_authorized') {
-            // The person is logged into Facebook, but not your app.
-            document.getElementById('status').innerHTML = 'Please log ' +
-              'into this app.';
-          } else {
-            // The person is not logged into Facebook, so we're not sure if
-            // they are logged into this app or not.
-            document.getElementById('status').innerHTML = 'Please log ' +
-              'into Facebook.';
-          }
-        }
 
-        // This function is called when someone finishes with the Login
-        // Button.  See the onlogin handler attached to it in the sample
-        // code below.
-        function checkLoginState() {
-          FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
-          });
-        }
-
-        window.fbAsyncInit = function() {
+      //this is taken from developer.facebook.com - it is their own quick initialization for their SDK
+       window.fbAsyncInit = function() {
         FB.init({
           appId      : '712639635464013',
-          cookie     : true,  // enable cookies to allow the server to access
-                              // the session
-          xfbml      : true,  // parse social plugins on this page
-          version    : 'v2.0' // use version 2.0
+          xfbml      : true,
+          version    : 'v2.0'
         });
+      };
 
-        // Now that we've initialized the JavaScript SDK, we call
-        // FB.getLoginStatus().  This function gets the state of the
-        // person visiting this page and can return one of three states to
-        // the callback you provide.  They can be:
-        //
-        // 1. Logged into your app ('connected')
-        // 2. Logged into Facebook, but not your app ('not_authorized')
-        // 3. Not logged into Facebook and can't tell if they are logged into
-        //    your app or not.
-        //
-        // These three cases are handled in the callback function.
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
 
-        FB.getLoginStatus(function(response) {
-          statusChangeCallback(response);
-        });
-
-        };
-
-        // Load the SDK asynchronously
-        (function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js";
-          fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-
-        // Here we run a very simple test of the Graph API after login is
-        // successful.  See statusChangeCallback() for when this call is made.
         function testAPI() {
           console.log('Welcome!  Fetching your information.... ');
           FB.api('/me', function(response) {
@@ -137,14 +115,8 @@ $resultInfo = mysql_query($contestantInfo);
 
 
 
-<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
 
-      <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="true" data-auto-logout-link="true"></div>
-
+      <button onclick="logOut();">Log Out</button>
 
       <div>
 
@@ -152,17 +124,18 @@ $resultInfo = mysql_query($contestantInfo);
 
 
       while($row = mysql_fetch_assoc($resultInfo)){
-        echo "<div class = 'contestant'". $row['ID'] . "'>";
+        echo "<div class = 'contestant' id = '".  $row['ID'] . "'>";
         echo "<h3 class = 'contestantName'>" . $row['firstname'] . " " . $row['lastname'] . "</h3>";
-        echo "<p class= 'trackname'>" . $row['tracktitle'] . "</p>";
-        echo "<p>" . $row['votes'] . "</p>";
-        echo "<input type = 'button' value = 'vote!' onclick = 'post(" . $row['ID'] . ");'>";
+        echo "<p class = 'trackname'>" . $row['tracktitle'] . "</p>";
+        echo "<p class = 'votes'>" . $row['votes'] . "</p>";
+        echo "<input type = 'button' value = 'vote!' onclick = 'doLogin(" . $row['ID'] . ")'>";
         echo "<br>";
 
         echo "</div>";
       }
 
 
+// post(" . $row['ID'] . ")
 ?>
 
       </div>
@@ -181,6 +154,9 @@ $resultInfo = mysql_query($contestantInfo);
 
       <div id="result"></div>
 
+
+
+    <button onclick="doLogin();">Login</button>
 
       <br><br><br><br>
 
