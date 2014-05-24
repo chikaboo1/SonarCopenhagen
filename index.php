@@ -27,9 +27,10 @@ $resultInfo = mysql_query($contestantInfo);
       </script>
 
     <script>
-      function post(id){
+      var facebookID;
+      function post(id, user){
         var selection = "#" + id + " .votes" ;
-        $.post('vote-upload.php', {posttest:id},
+        $.post('vote-upload.php', {posttest:id, postUser:user},
           function(data){
             $(selection).replaceWith("<p class = 'votes'>" + data + "</p>");
           });
@@ -54,7 +55,8 @@ $resultInfo = mysql_query($contestantInfo);
       function doLogin(id){
         FB.getLoginStatus(function(response) {
           if (response.status === 'connected') {
-            post(id);
+            facebookID = response.authResponse.userID;
+            post(id, facebookID);
             // connected
           } else if (response.status === 'not_authorized') {
             // not_authorized
@@ -68,13 +70,21 @@ $resultInfo = mysql_query($contestantInfo);
 
       function login(id){
         FB.login(function(response){
-          post(id);
+          facebookID = response.authResponse.userID;
+          post(id, facebookID);
+
+          console.log(response.authResponse.accessToken);
+
+          console.log(facebookID);
         });
       }
 
       function logOut(){
-        FB.logout(function(response){
-          alert("you have been logged out");
+        FB.getLoginStatus(function(response){
+          if(response.status === 'connected'){
+            FB.logout();
+            alert("you have been logged out of facebook.");
+          }
         });
       }
 
@@ -154,9 +164,6 @@ $resultInfo = mysql_query($contestantInfo);
 
       <div id="result"></div>
 
-
-
-    <button onclick="doLogin();">Login</button>
 
       <br><br><br><br>
 
