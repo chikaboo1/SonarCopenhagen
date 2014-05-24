@@ -7,8 +7,6 @@ function subpage_prefix (){
   }
 }
 
-echo $_SERVER['PHP_SELF'];
-
 include ("php/dbconnect.php");
 include ("php/functions.php");
 
