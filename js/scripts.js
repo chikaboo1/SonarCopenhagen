@@ -1,63 +1,43 @@
  $(document).ready(function(){
 
- 
+	
+ 	//playlist desktop
 
- 	//playlist slider
-
-    // $('img.playlist-text, #playlist-wrapper').click(function(e){
-    // 	$("#playlist-wrapper").animate({
-    // 		left:["toggle","0"]
-
-    // 	});
-
-    // });
-
-  	if($('#playlist-wrapper').css('width') === '100%'){
-
-    $("#playlist-wrapper").toggle(
+	$("#playlist-wrapper-desktop").toggle(
 
 		function()
 		{
-		    $('#playlist-wrapper').animate({left:'0'}, 200);
+		    $('#playlist-wrapper-desktop').animate({left:'0'}, 200);
 		},
 		function()
 
 		{
 			
-		    $('#playlist-wrapper').animate({left:'-80%'}, 200);
+		    $('#playlist-wrapper-desktop').animate({left:'-350px'}, 200);
 
 		}
 
 
 		);
+	//playlist mobile
 
-}
+	$('#playlist-wrapper-mobile').hide();
 
-else {
+	$( "#playlist-button-mobile" ).click(function(e) {
+		e.stopPropagation();
+	  $( "#playlist-wrapper-mobile" ).slideToggle('fast');
+	});
 
-	$("#playlist-wrapper").toggle(
+	$('body').click(function (event) {    		
+    $('#playlist-wrapper-desktop').animate({left:'-350px'}, 200);
+    $('#playlist-wrapper-mobile').hide();
+	});
 
-		function()
-		{
-		    $('#playlist-wrapper').animate({left:'0'}, 200);
-		},
-		function()
-
-		{
-			
-		    $('#playlist-wrapper').animate({left:'-37%%'}, 200);
-
-		}
-
-
-		);
-
-
-}
 
     // stratus player
  	$.stratus({
-      links: 'https://soundcloud.com/natasha-natarajan/sets/vega'
+      links: 'https://soundcloud.com/natasha-natarajan/sets/vega',
+      color: '2e3192'
     });
 
   });

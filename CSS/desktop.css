@@ -9,20 +9,17 @@
 	display:block;
 }
 
+.mobile-show {
+	display:none !important;
+}
+
 /*
 =======================
 PLAYLIST BOX
 =======================
 */
-#playlist-wrapper {
-	position:fixed;
-	z-index:80;
-	top:60%;
-	left:-37%;
-	width:40%;
-	height:20%;
-	background-color:#2e3192;
-	color:white;
+#playlist-wrapper-desktop {
+	display:block;
 
 }
 
