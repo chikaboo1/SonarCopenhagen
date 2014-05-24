@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 24, 2014 at 06:14 PM
+-- Generation Time: May 24, 2014 at 06:17 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -40,7 +40,7 @@ CREATE TABLE `contestants` (
   UNIQUE KEY `ID_UNIQUE` (`ID`),
   UNIQUE KEY `email_UNIQUE` (`email`),
   UNIQUE KEY `soundcloud_UNIQUE` (`soundcloud`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `contestants`
