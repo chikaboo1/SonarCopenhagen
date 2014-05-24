@@ -7,6 +7,9 @@ function subpage_prefix (){
   }
 }
 
+include ("php/dbconnect.php");
+include ("php/functions.php");
+
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +22,8 @@ function subpage_prefix (){
 		<script type="text/javascript" src="<?php subpage_prefix() ?>js/jquery.js"></script>
          <script type="text/javascript" src="<?php subpage_prefix() ?>js/stratus.js"></script>
          <script type="text/javascript" src="<?php subpage_prefix() ?>js/scripts.js"></script>
+         <script type="text/javascript" src ="<?php subpage_prefix()?>js/php_scripts.js"></script>
+        <script type="text/javascript" src ="<?php subpage_prefix()?>js/facebook_scripts.js"></script>
 
       </head>
 
@@ -33,6 +38,12 @@ function subpage_prefix (){
         js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.0";
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
+
+      <script src = 'js/facebook_SDK.js'></script>
+
+      <button onclick="logOut();">Log Out</button>
+
+      <div id="result"></div>
 
       <!-- end facebook connect box -->
 
