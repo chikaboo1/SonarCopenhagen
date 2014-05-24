@@ -11,7 +11,18 @@ $allUsers = "SELECT facebook_ID FROM vote_upload";
 
 $userResult = mysql_query($allUsers);
 
-$userArray = mysql_fetch_array($userResult);
+
+$userArray = array();
+
+while($row = mysql_fetch_array($userResult)){
+	$userArray[] = $row['facebook_ID'];
+};
+
+
+foreach($userArray as $result) {
+    echo $result . '<br>';
+}
+
 
 if (in_array($user, $userArray)) {
     echo "<script> alert(\"Hi there, we can see that you have voted. Normally, we'd tell you that you've already voted and that you can't vote again. But for the purposes of this prototype and for testing, we've allowed for multiple voting. Go crazy\");
