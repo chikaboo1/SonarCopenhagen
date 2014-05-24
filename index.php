@@ -21,28 +21,14 @@ include ("php/functions.php");
 
     </head>
 
-      <body>
+    <body>
       <script src = 'js/facebook_SDK.js'></script>
 
       <button onclick="logOut();">Log Out</button>
 
-      <div>
-
-      <?php
-
-        include ("form.php");
-      ?>
-
-      </div>
-
-
 
       <div id="result"></div>
 
-
-      <br><br><br><br>
-
-
-      </body>
+    </body>
 
   </html>
