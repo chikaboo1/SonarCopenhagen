@@ -14,17 +14,22 @@ $userResult = mysql_query($allUsers);
 $userArray = mysql_fetch_array($userResult);
 
 if (in_array($user, $userArray)) {
-    echo "<script language=javascript> alert(\"this is where normally we'd tell you that you've already voted and that you can't vote again. But for the purposes of this prototype, we've allowed for multiple voting\");
+    echo "<script language=javascript> alert(\"Hi there, we can see that you have voted. Normally, we'd tell you that you've already voted and that you can't vote again. But for the purposes of this prototype and for testing, we've allowed for multiple voting. Go crazy.\");
 
 
     </script>";
+
+
+  } else {
+
+  	$voterInformation = "INSERT INTO vote_upload (ID, facebook_ID, voted, contestant_ID) VALUES ('', '$user', '1', '$contestant')";
+
+		mysql_query($voterInformation);
   }
 
 
 
-$voterInformation = "INSERT INTO vote_upload (ID, facebook_ID, voted, contestant_ID) VALUES ('', '$user', '1', '$contestant')";
 
-mysql_query($voterInformation);
 
 
 
