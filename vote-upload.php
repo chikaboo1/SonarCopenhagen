@@ -14,7 +14,7 @@ $userResult = mysql_query($allUsers);
 $userArray = mysql_fetch_array($userResult);
 
 if (in_array($user, $userArray)) {
-    echo "<script language=javascript> alert(\"Hi there, we can see that you have voted. Normally, we'd tell you that you've already voted and that you can't vote again. But for the purposes of this prototype and for testing, we've allowed for multiple voting. Go crazy\");
+    echo "<script> alert(\"Hi there, we can see that you have voted. Normally, we'd tell you that you've already voted and that you can't vote again. But for the purposes of this prototype and for testing, we've allowed for multiple voting. Go crazy\");
 
 
     </script>";
