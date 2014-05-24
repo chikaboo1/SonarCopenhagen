@@ -7,6 +7,8 @@ function subpage_prefix (){
   }
 }
 
+echo $_SERVER['PHP_SELF'];
+
 include ("php/dbconnect.php");
 include ("php/functions.php");
 
@@ -49,47 +51,47 @@ include ("php/functions.php");
 
       <!-- start playlist  box -->
       <div id="playlist-wrapper-desktop" class="desktop-show">
-        <img class="playlist-text" src="<?php subpage_prefix()?>images/playlist-text.png" alt="Our Playlists"/> 
+        <img class="playlist-text" src="<?php subpage_prefix()?>images/playlist-text.png" alt="Our Playlists"/>
         <div id="playlists">
           <p>
-            <a href="http://soundcloud.com/natasha-natarajan/sets/thursday" class="stratus">Thursday</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/friday" class="stratus">Friday</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/saturday" class="stratus">Saturday</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/thursday" class="stratus">Thursday</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/friday" class="stratus">Friday</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/saturday" class="stratus">Saturday</a> /
             <a href="http://soundcloud.com/natasha-natarajan/sets/sunday" class="stratus">Sunday</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/pumpehuset" class="stratus">Pumpehuset</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/huset" class="stratus">Huset</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/forum" class="stratus">Forum</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/lille-vega" class="stratus">Lille Vega</a> / 
-            <a href="https://soundcloud.com/natasha-natarajan/sets/vega" class="stratus">Store Vega</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/culturebox" class="stratus">Culturebox</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/loppen" class="stratus">Loppen</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/pumpehuset" class="stratus">Pumpehuset</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/huset" class="stratus">Huset</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/forum" class="stratus">Forum</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/lille-vega" class="stratus">Lille Vega</a> /
+            <a href="https://soundcloud.com/natasha-natarajan/sets/vega" class="stratus">Store Vega</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/culturebox" class="stratus">Culturebox</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/loppen" class="stratus">Loppen</a> /
             <a href="http://soundcloud.com/natasha-natarajan/sets/rust" class="stratus">Rust</a> </p>
             <p>** double click on the soundcloud player to see what you've been listening to</p>
-        </div>        
+        </div>
 
       </div>
 
       <!-- listen to our playlists mobile button-->
-       <div id="playlist-button-mobile" class="mobile-show"><button>Listen to our playlists</button></div> 
+       <div id="playlist-button-mobile" class="mobile-show"><button>Listen to our playlists</button></div>
        <!-- listen to our playlists mobile button-->
        <div id="playlist-wrapper-mobile" class="mobile-show">
-        <img class="playlist-text" src="<?php subpage_prefix()?>images/playlist-text1.png" alt="Our Playlists"/> 
+        <img class="playlist-text" src="<?php subpage_prefix()?>images/playlist-text1.png" alt="Our Playlists"/>
         <div id="playlists">
           <p>
-            <a href="http://soundcloud.com/natasha-natarajan/sets/thursday" class="stratus">Thursday</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/friday" class="stratus">Friday</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/saturday" class="stratus">Saturday</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/thursday" class="stratus">Thursday</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/friday" class="stratus">Friday</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/saturday" class="stratus">Saturday</a> /
             <a href="http://soundcloud.com/natasha-natarajan/sets/sunday" class="stratus">Sunday</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/pumpehuset" class="stratus">Pumpehuset</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/huset" class="stratus">Huset</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/forum" class="stratus">Forum</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/lille-vega" class="stratus">Lille Vega</a> / 
-            <a href="https://soundcloud.com/natasha-natarajan/sets/vega" class="stratus">Store Vega</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/culturebox" class="stratus">Culturebox</a> / 
-            <a href="http://soundcloud.com/natasha-natarajan/sets/loppen" class="stratus">Loppen</a> / 
+            <a href="http://soundcloud.com/natasha-natarajan/sets/pumpehuset" class="stratus">Pumpehuset</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/huset" class="stratus">Huset</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/forum" class="stratus">Forum</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/lille-vega" class="stratus">Lille Vega</a> /
+            <a href="https://soundcloud.com/natasha-natarajan/sets/vega" class="stratus">Store Vega</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/culturebox" class="stratus">Culturebox</a> /
+            <a href="http://soundcloud.com/natasha-natarajan/sets/loppen" class="stratus">Loppen</a> /
             <a href="http://soundcloud.com/natasha-natarajan/sets/rust" class="stratus">Rust</a> </p>
             <p>** double click on the soundcloud player to see what you've been listening to</p>
-        </div>        
+        </div>
 
       </div>
 
@@ -119,5 +121,5 @@ include ("php/functions.php");
             </ul>
           </nav>
           </header>
-         
+
           <div id="main-content-wrapper">
