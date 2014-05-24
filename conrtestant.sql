@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: May 24, 2014 at 06:17 PM
+-- Generation Time: May 24, 2014 at 06:19 PM
 -- Server version: 5.5.33
 -- PHP Version: 5.5.3
 
@@ -19,28 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `mydb`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `contestants`
---
-
-CREATE TABLE `contestants` (
-  `ID` int(11) NOT NULL AUTO_INCREMENT,
-  `firstname` varchar(45) NOT NULL,
-  `lastname` varchar(45) NOT NULL,
-  `email` varchar(45) NOT NULL,
-  `artistname` varchar(45) NOT NULL,
-  `tracktitle` varchar(45) NOT NULL,
-  `soundcloud` varchar(100) NOT NULL,
-  `sitelink` varchar(45) DEFAULT NULL,
-  `votes` int(11) NOT NULL,
-  PRIMARY KEY (`ID`),
-  UNIQUE KEY `ID_UNIQUE` (`ID`),
-  UNIQUE KEY `email_UNIQUE` (`email`),
-  UNIQUE KEY `soundcloud_UNIQUE` (`soundcloud`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `contestants`
