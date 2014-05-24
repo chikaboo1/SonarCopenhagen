@@ -15,6 +15,10 @@ include ('header.php');
 
 <p><a href="https://soundcloud.com/natasha-natarajan/sets/competition" class="stratus">Listen to the full playlist<span class="play-empty"></span></a></p>
 
+<?php
+include('../php/form.php');
+?>
+
 <h2 class="border-top">Facebook Raffles</h2>
 
 <p>Every 3 weeks we announce a new competition on our facebook page so like us and take part. We have great prizes to give away</p>

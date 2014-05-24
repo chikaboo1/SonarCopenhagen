@@ -36,6 +36,12 @@ include ('pages/header.php');
                 <h1>Competition</h1>
                 <p>5 artists will get the chance to perform at the festival this year but who will they be? We're running a competition where you, our audience, get to participate and decide who you think is an upcoming artist in the electronic dance music scene.</p>
               </div>
+              <?php
+
+                allContestants();
+
+              ?>
+
             </div>
 
             <div id="homepage-connect" class="homepage-div desktop-show">

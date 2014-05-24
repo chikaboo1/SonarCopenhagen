@@ -1,5 +1,14 @@
 <?php
 
+
+function subpage_prefix (){
+
+  if ($_SERVER['PHP_SELF']!='/index.php'){
+    echo '../';
+  }
+}
+
+
 	function allContestants() {
 		$contestantInfo = "SELECT * FROM contestants";
 		$resultInfo = mysql_query($contestantInfo);
