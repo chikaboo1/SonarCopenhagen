@@ -196,6 +196,15 @@ icons
     speak: none;
 }
 
+.heart-full:before {
+	content:' \e603';
+	font-family: 'icomoon';
+    speak: none;
+	color:#ff3f34;
+	font-size:1.6em;
+	vertical-align: middle;
+}
+
 /*
 =======================
 PLAYLIST BOX
@@ -346,13 +355,16 @@ Competition (home and subpage)
 */
 
 div.contestant {
-	padding:10px 10px 10px 0;
+	padding:10px 15px 10px 0;
 	padding-bottom:25%;
 	height:0;
+	position:relative;
 }
 
 div.bottom-line {
-	padding-top:10px;
+	position:absolute;
+	bottom:0;
+	padding:10px 15px 0 0;
 	overflow:auto;
 }
 
