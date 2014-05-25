@@ -29,11 +29,11 @@ if ($_FILES == true) {
 		// //checks if the file is already on the server - if it is - validate is set to false and we update our error message
 		if (file_exists("../userimages/" . $_FILES['image']['name'])) {
 			$validate = false;
-			$error_msg[] .= " this file already exists on the server";
+			$error_msg[] .= "this file already exists on the server.You can't have the same image as someone else.";
 		}
 
 		foreach ($error_msg as $value) {
-			echo "<p>" . $value . "</p>";
+			echo "<h4>" . $value . "</h4>";
 		}
 		// //now we check our $validate value. We only want to continue if it passed all our requirement tests - so if it was set to false at any point we won't continue beyond this point
 		if($validate == true){
