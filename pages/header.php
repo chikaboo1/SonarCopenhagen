@@ -7,8 +7,8 @@ function subpage_prefix (){
   }
 }
 
-include ("php/dbconnect.php");
-include ("php/functions.php");
+include ("../php/dbconnect.php");
+include ("../php/functions.php");
 
 ?>
 
@@ -98,23 +98,23 @@ include ("php/functions.php");
         <div id="all-content-wrapper">
         <header>
           <div id="heading-wrapper">
-            <img id="main-logo" src="<?php subpage_prefix() ?>images/sonarcphlogo.png" alt="sonarcph-logo"/>
+            <a href="<?php subpage_prefix() ?>index.php"><img id="main-logo" src="<?php subpage_prefix() ?>images/sonarcphlogo.png" alt="sonarcph-logo"/></a>
             <div id="header-text" id="tag-line" >
              <p class="nowrap desktop-show">4 days. 8 venues. 50 artists. 1 experience.</p>
              <p class="nowrap" id="sonarcph">Sonar Copenhagen</p>
              <p class="nowrap" id="sonardates">October 16th-19th</p>
-             <div><button class="important-button buy-tickets"><a href="">Buy tickets</a></button></div>
+             <div><button class="important-button buy-tickets"><a href="<?php subpage_prefix()?>pages/tickets.php">Buy tickets</a></button></div>
             </div>
         </div>
           <nav>
             <ul id="navigation">
-              <li class="nav-item"><a href="">Program</a></li>
-              <li class="nav-item"><a href="">Tickets</a></li>
-              <li class="nav-item"><a href="">Information</a></li>
-              <li class="nav-item"><a href="">News</a></li>
-              <li class="nav-item"><a href="pages/competition.php">Competitions</a></li>
-              <li class="nav-item"><a href="">Gallery</a></li>
-              <li class="nav-item"><a href="">About</a></li>
+              <li class="nav-item"><a href="<?php subpage_prefix() ?>pages/program.php">Program</a></li>
+              <li class="nav-item"><a href="<?php subpage_prefix() ?>pages/tickets.php">Tickets</a></li>
+              <li class="nav-item"><a href="<?php subpage_prefix() ?>pages/information.php">Information</a></li>
+              <li class="nav-item"><a href="<?php subpage_prefix() ?>pages/news.php">News</a></li>
+              <li class="nav-item"><a href="<?php subpage_prefix() ?>pages/competition.php">Competitions</a></li>
+              <li class="nav-item"><a href="<?php subpage_prefix() ?>pages/gallery.php">Gallery</a></li>
+              <li class="nav-item"><a href="<?php subpage_prefix() ?>pages/gallery.php">About</a></li>
               <li class="nav-item" id="socialmediaicons"><a href=""><img class="nav-socialmedia" id="nav-facebook" src="<?php subpage_prefix() ?>images/social-media/facebook.png"/></a><a href=""><img class="nav-socialmedia"class="nav-socialmedia"  id="nav-soundcloud" src="<?php subpage_prefix() ?>images/social-media/soundcloud.png"/></a><a href=""><img class="nav-socialmedia" id="nav-twitter" src="<?php subpage_prefix() ?>images/social-media/twitter.png"/></a></li>
             </ul>
           </nav>

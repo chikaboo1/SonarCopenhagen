@@ -34,9 +34,9 @@ button {
 		background:transparent;
 		overflow:visible;
 		cursor:pointer;
+		outline: none;
 		/* Stupid IE */
 		#vertical-align:middle; /* IE6,IE7 */
-		color:red;
 	}
 
 table {
@@ -87,7 +87,7 @@ h1 {
 }
 
 h1:before {
-    content: '\e602 ';
+    content: '\e602  ';
     font-family: 'icomoon';
     speak: none;
 }   
@@ -116,7 +116,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .important-button {
@@ -124,6 +124,7 @@ a:hover {
 	padding:5px;
 	font-size:18px;
 	color:white !important;
+	cursor: pointer;
 }
 
 .important-button a:visited{
@@ -136,9 +137,10 @@ a:hover {
 }
 
 #all-content-wrapper {
+	overflow: auto;
 	width:90%;
-	height:100%;
 	margin:auto;
+	padding-bottom:40px;
 }
 
 .desktop-show {
@@ -153,6 +155,18 @@ a:hover {
 icons
 =======================
 */
+
+ .heart-empty {
+	color:#ff3f34;
+	font-size:1.6em;
+	vertical-align: middle;
+}
+
+.play-empty {
+	color:#ff3f34;
+	font-size:1em;
+	vertical-align: middle;
+}
 
 .play-empty:before{
 
@@ -251,6 +265,10 @@ PLAYLIST BOX
 	padding:5px;
 }
 
+#playlist-button-mobile:visited {
+	color:white;
+}
+
 /*
 =======================
 HEADER
@@ -320,4 +338,41 @@ padding:5px 0;
 	margin:10px 0;
 
 }
+
+/*
+=======================
+Competition (home and subpage)
+=======================
+*/
+
+div.contestant {
+	padding:10px 10px 10px 0;
+	padding-bottom:25%;
+	height:0;
+}
+
+div.bottom-line {
+	padding-top:10px;
+	overflow:auto;
+}
+
+div.bottom-line p.track-play {
+	width:auto;
+	float:left;
+}
+
+div.bottom-line p.votes{
+	width:auto;
+	float:right;
+}
+
+div.all-contestants {
+	overflow:auto;
+	margin:1em 0;
+}
+
+.fb-like {
+	margin-top:20px;
+}
+
 

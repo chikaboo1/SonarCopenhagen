@@ -1,4 +1,6 @@
 <?php
+echo $functions;
+
 include ('header.php');
 ?>
 <div class="sub-page-content">
@@ -14,6 +16,11 @@ include ('header.php');
 <h2>Our Participants</h2>
 
 <p><a href="https://soundcloud.com/natasha-natarajan/sets/competition" class="stratus">Listen to the full playlist<span class="play-empty"></span></a></p>
+<div class="all-contestants">
+<?php
+allContestants();
+?>
+</div>
 
 <?php
 include('../php/form.php');
