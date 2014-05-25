@@ -1,7 +1,7 @@
 <?php
 	include ("dbconnect.php");
 
-
+echo "HERLLLLLLO";
 	$name = $_POST['firstname'];
 echo "<prev>";
 print_r($_POST);
@@ -36,6 +36,9 @@ if ($_FILES == true) {
 			default:
 				$validate = false;
 				$error_msg[] .= 'Wrong file type, amigo';
+				foreach ($error_msg as $value) {
+					echo $value;
+				}
 				break;
 		}
 
@@ -58,7 +61,7 @@ if ($_FILES == true) {
 
 			//moves the uploaded file ($filename) to our server at our full destination path ($full_destination)
 			move_uploaded_file($filename, $destination);
-			echo $out;
+			echo $error_msg;
 
 			$query = "INSERT INTO contestants (ID, firstname, lastname, email, artistname, tracktitle, soundcloud, sitelink, image, votes) VALUES ('', '$firstName', '$lastName', '$email', '$artistName', '$trackTitle', '$soundName', '$siteLink', '$destination', '0')";
 
