@@ -1,22 +1,6 @@
 <?php
 	include ("dbconnect.php");
 
-echo "HERLLLLLLO";
-	$name = $_POST['firstname'];
-echo "<prev>";
-print_r($_POST);
-echo "<br>";
-print_r($_POST['name']);
-echo "<br>";
-print_r($name);
-echo "</prev>";
-
-
-echo "<prev>";
-print_r($_FILES);
-echo "</prev>";
-
-
 	$firstName = $_POST['firstname'];
 	$lastName = $_POST['lastname'];
 	$email = $_POST['email'];
@@ -26,6 +10,9 @@ echo "</prev>";
 	$siteLink = $_POST['sitelinke'];
 
 if ($_FILES == true) {
+		$error_msg = array();
+		$error_msg[] .= '<h3>There was a problem with your upload. It might have to do with one of the following:</h3>';
+
 		// //checks the type of the image - if it is not .jpg, .gif, or .png we will set $validate to false and update our $error_msg with a wrong type message
 		switch ($_FILES['image']['type']) {
 			case 'image/jpeg':
@@ -35,19 +22,19 @@ if ($_FILES == true) {
 				break;
 			default:
 				$validate = false;
-				$error_msg[] .= 'Wrong file type, amigo';
-				foreach ($error_msg as $value) {
-					echo $value;
-				}
+				$error_msg[] .= 'Hey, it looks like you tried to upload a file of the wrong type';
 				break;
 		}
 
 		// //checks if the file is already on the server - if it is - validate is set to false and we update our error message
-		if (file_exists("userimages/" . $_FILES['image']['name'])) {
+		if (file_exists("../userimages/" . $_FILES['image']['name'])) {
 			$validate = false;
 			$error_msg[] .= " this file already exists on the server";
 		}
 
+		foreach ($error_msg as $value) {
+			echo "<p>" . $value . "</p>";
+		}
 		// //now we check our $validate value. We only want to continue if it passed all our requirement tests - so if it was set to false at any point we won't continue beyond this point
 		if($validate == true){
 			//temp name
@@ -61,14 +48,10 @@ if ($_FILES == true) {
 
 			//moves the uploaded file ($filename) to our server at our full destination path ($full_destination)
 			move_uploaded_file($filename, $destination);
-			echo $error_msg;
 
 			$query = "INSERT INTO contestants (ID, firstname, lastname, email, artistname, tracktitle, soundcloud, sitelink, image, votes) VALUES ('', '$firstName', '$lastName', '$email', '$artistName', '$trackTitle', '$soundName', '$siteLink', '$destination', '0')";
 
 			$result=mysql_query($query);
-
-
-
 		}
 	}
 

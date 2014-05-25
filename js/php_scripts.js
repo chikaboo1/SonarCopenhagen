@@ -29,7 +29,7 @@
     function alertContents() {
     if (xml.readyState === 4) {
       if (xml.status === 200) {
-        alert(xml.responseText);
+        document.getElementById("myDiv").innerHTML = xml.responseText;
       } else {
         alert('There was a problem with the request.');
       }
