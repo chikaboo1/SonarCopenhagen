@@ -1,5 +1,7 @@
 var facebookID;
 
+
+//this checks to see if someone has logged into facebook. If they have it sends the id of the div they have clicked to the post function
 function doLogin(id){
   FB.getLoginStatus(function(response) {
     if (response.status === 'connected') {
@@ -16,6 +18,7 @@ function doLogin(id){
   });
 }
 
+//facebook login dialogue appears if they haven't logged in
 function login(id){
   FB.login(function(response){
     facebookID = response.authResponse.userID;
@@ -27,6 +30,8 @@ function login(id){
   });
 }
 
+
+//button to log people out
 function logOut(){
   FB.getLoginStatus(function(response){
     if(response.status === 'connected'){
