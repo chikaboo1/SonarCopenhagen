@@ -4,9 +4,11 @@ include ('header.php');
 
 <h1>Program</h1>
 
+<?php
+allArtists();
+?>
 
 
-</div>
 <?php
 include ('footer.php');
 ?>
