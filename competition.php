@@ -1,5 +1,5 @@
 <?php
-echo $functions;
+
 
 include ('header.php');
 ?>

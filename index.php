@@ -97,5 +97,5 @@ include ('header.php');
               </div>
 
            <?php
-            include('pages/footer.php');
+            include('footer.php');
            ?>

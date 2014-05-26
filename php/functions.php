@@ -69,13 +69,13 @@ function allArtists () {
 
 			while($row = mysql_fetch_assoc($artistResult)){
 		  echo "<div class = 'table-box artists'>";
-		  echo "<div class='artist-image'><div class='artist-play'><a href='".$row['']."' class='stratus'><span class='play-full'></span><a></div><img src='".$row['image']."' alt='".$row['artistname']." image'/></div>";
+		  echo "<div class='artist-image'><div class='artist-play'><a href='".$row['soundcloud']."' class='stratus'><span class='play-full'></span><a></div><img src='".$row['image']."' alt='".$row['artist_name']." image'/></div>";
 		  echo "<h3 class = 'artist-name'>" . $row['artist_name']."</h3>";
 		 echo "<p class = 'daytime'>" . $row['day'] . " " . $row['time'] . "</p>";
 		 echo "<p class = 'venue'>" . $row['venue'] ."</p>";
 		  echo "</div>";
 		  // echo "<div class='artists-description'><p class='artist-text'>".$row['description']."</p></div";
-}
+	}
 }
 
 
