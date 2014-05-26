@@ -1,7 +1,7 @@
-<?php 
+<?php
 include ('header.php');
 ?>
-            
+
             <div id="homepage-venues" class="homepage-div desktop-show">
               <div id="venues" class="homepage">
                   <div class="table-box pumpehuset">
@@ -63,11 +63,11 @@ include ('header.php');
               </div>
 
               <button id="home program" class="important-button">See the full program </button>
-              
+
             </div>
         </div>
 
-            
+
             <div id="homepage-competition" class="homepage-div desktop-show">
               <div class="homepage-title">
                 <h1>Competition</h1>
@@ -75,7 +75,7 @@ include ('header.php');
               </div>
               <?php
 
-                allContestants();
+                top_four();
 
               ?>
 
@@ -91,11 +91,11 @@ include ('header.php');
                     <div class="table-box"><a class="twitter-timeline" href="https://twitter.com/SonarFestival" data-widget-id="468708489062150144">Tweets by @SonarFestival</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
 </div>
-                  
+
                 </div>
-      
+
               </div>
-           
+
            <?php
             include('pages/footer.php');
            ?>
