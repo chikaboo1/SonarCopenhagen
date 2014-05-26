@@ -223,8 +223,7 @@ div#connect div.table-box {
 
 div.contestant {
 	padding:10px 15px 10px 0;
-	padding-bottom:30%;
-	height:0;
+	height:auto;
 	position:relative;
 }
 
