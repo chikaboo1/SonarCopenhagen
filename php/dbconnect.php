@@ -10,5 +10,6 @@ if (!$db_selected) {
   die ('Can\'t use db : ' . mysql_error());
 }
 
+mysql_query('SET NAMES utf8 ');
 
  ?>
