@@ -8,7 +8,7 @@ body,html, * {
 	width:100%;
 	padding:0;
 	margin:0;
-	 -moz-box-sizing: border-box; 
+	 -moz-box-sizing: border-box;
 	 -webkit-box-sizing: border-box;
 	 box-sizing: border-box;
 
@@ -51,7 +51,7 @@ table {
 GENERAL
 =======================
 */
- 
+
   @font-face {
         font-family: 'icomoon';
         src:url('../extras/icomoon.eot');
@@ -71,7 +71,7 @@ src: url(../extras/HelveticaNeueLTStd-Hv.otf) format ('opentype');
 
 body {
 	 color:#333;
-	 font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", 
+	 font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue",
   Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size:1em;
   padding-bottom:50px;
@@ -89,7 +89,7 @@ h1:before {
     content: '\e602  ';
     font-family: 'icomoon';
     speak: none;
-}   
+}
 
 h2 {
 	font-family:'Helvetica-Heavy', sans-serif;
@@ -99,7 +99,7 @@ h2 {
 }
 
 h3 {
-	font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", 
+	font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue",
   	Helvetica, Arial, "Lucida Grande", sans-serif;	font-size; 1.2em;
   	font-weight:bold;
 	color:#2e3192;
@@ -116,6 +116,10 @@ a {
 
 a:hover {
 	text-decoration: none;
+}
+
+button a {
+	color:white;
 }
 
 .important-button {
@@ -370,7 +374,7 @@ SUB-PAGES
 
 .sub-page-content p {
 
-padding:5px 0;  
+padding:5px 0;
 
 }
 
@@ -473,7 +477,7 @@ font-size:1em;
 
 /*
 =======================
-Program 
+Program
 =======================
 */
 
@@ -503,7 +507,7 @@ div.artists div.artist-image div.artist-play {
 div.artists div.artist-image div.artist-play .play-full:before {
 	color:white;
 	font-size:3em;
-	
+
 
 }
 
