@@ -23,7 +23,7 @@ allContestants();
 </div>
 
 <?php
-include('../php/form.php');
+include('php/form.php');
 ?>
 
 <h2 class="border-top">Facebook Raffles</h2>
