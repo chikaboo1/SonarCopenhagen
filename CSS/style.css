@@ -331,6 +331,21 @@ li.nav-item a {
 	padding: 10px 5px 0px 0px;
 }
 
+
+/*
+=======================
+mobile button
+=======================
+*/
+
+#mobile-menu-button {
+	position:absolute;
+	top:30px;
+	right:5%;
+	width:10%;
+	height:auto;
+}
+
 /*
 =======================
 SUB-PAGES
@@ -359,6 +374,13 @@ div.contestant {
 	padding-bottom:25%;
 	height:0;
 	position:relative;
+}
+
+div.contestant-image {
+	width:100%;
+	padding-bottom:60%;
+	height:0;
+	overflow: hidden;
 }
 
 div.bottom-line {
