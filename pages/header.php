@@ -39,7 +39,7 @@ include ("../php/functions.php");
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
 
-      <script src = 'js/facebook_SDK.js'></script>
+      <script src = '<?php subpage_prefix()?>js/facebook_SDK.js'></script>
 
       <button onclick="logOut();">Log Out</button>
 
