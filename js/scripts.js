@@ -40,4 +40,10 @@
       color: '2e3192'
     });
 
+ 	//mobile menu
+ 	$("#mobile-menu-button").click(function(){
+ 		$("nav").slideToggle();
+
+ 	});
+
   });

@@ -331,6 +331,21 @@ li.nav-item a {
 	padding: 10px 5px 0px 0px;
 }
 
+
+/*
+=======================
+mobile button
+=======================
+*/
+
+#mobile-menu-button {
+	position:absolute;
+	top:30px;
+	right:5%;
+	width:10%;
+	height:auto;
+}
+
 /*
 =======================
 SUB-PAGES

@@ -18,7 +18,18 @@ include ("php/functions.php");
          <script type="text/javascript" src="js/scripts.js"></script>
          <script type="text/javascript" src ="js/php_scripts.js"></script>
         <script type="text/javascript" src ="js/facebook_scripts.js"></script>
+        <script type='text/javascript'>
+        <?php
+              if ($_SERVER['PHP_SELF']!='/index.php'){
+                echo "
+                   $(document).ready(function(){
+                      $('nav').hide();
 
+                   });
+                ";
+              }
+            ?> 
+    </script>
       </head>
 
       <body>
@@ -92,6 +103,11 @@ include ("php/functions.php");
         <div id="all-content-wrapper">
         <header>
           <div id="heading-wrapper">
+            <?php
+              if ($_SERVER['PHP_SELF']!='/index.php'){
+                include('mobile-menu.php');
+              }
+            ?>
             <a href="index.php"><img id="main-logo" src="images/sonarcphlogo.png" alt="sonarcph-logo"/></a>
             <div id="header-text" id="tag-line" >
              <p class="nowrap desktop-show">4 days. 8 venues. 50 artists. 1 experience.</p>
