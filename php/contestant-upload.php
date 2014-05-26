@@ -29,12 +29,10 @@ if ($_FILES == true) {
 		// //checks if the file is already on the server - if it is - validate is set to false and we update our error message
 		if (file_exists("../userimages/" . $_FILES['image']['name'])) {
 			$validate = false;
-			$error_msg[] .= "this file already exists on the server.You can't have the same image as someone else.";
+			$error_msg[] .= "this file already exists on the server. You'll have to give it another name.";
 		}
 
-		foreach ($error_msg as $value) {
-			echo "<h4>" . $value . "</h4>";
-		}
+
 		// //now we check our $validate value. We only want to continue if it passed all our requirement tests - so if it was set to false at any point we won't continue beyond this point
 		if($validate == true){
 			//temp name
@@ -52,6 +50,12 @@ if ($_FILES == true) {
 			$query = "INSERT INTO contestants (ID, firstname, lastname, email, artistname, tracktitle, soundcloud, sitelink, image, votes) VALUES ('', '$firstName', '$lastName', '$email', '$artistName', '$trackTitle', '$soundName', '$siteLink', '$destination', '0')";
 
 			$result=mysql_query($query);
+
+			echo "<h4>Awesome! You've been added to the competion. Good Luck!</h4>";
+		} else {
+			foreach ($error_msg as $value) {
+			echo "<h4>" . $value . "</h4>";
+			}
 		}
 	}
 

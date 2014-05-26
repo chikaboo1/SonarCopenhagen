@@ -44,7 +44,7 @@ $grabNewVotes = "SELECT * FROM contestants WHERE ID ='$contestant'";
 $result = mysql_query($grabNewVotes);
 
  while($row = mysql_fetch_array($result)){
- 	echo $row['votes'] . "<button><span class='heart-full'></span></button>";
+ 	echo $row['votes'] . "<button onclick='doLogin($contestant)';><span class='heart-full'></span></button>";
  }
 
  ?>
