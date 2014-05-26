@@ -35,10 +35,13 @@
 
 
     // stratus player
+
+    if ($(window).width() > 700) {
  	$.stratus({
       links: 'https://soundcloud.com/natasha-natarajan/sets/vega',
       color: '2e3192'
     });
+ }
 
  	//mobile menu
  	$("#mobile-menu-button").click(function(){

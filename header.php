@@ -74,32 +74,13 @@ include ("php/functions.php");
         </div>
 
       </div>
+            <!-- end playlist  box -->
+
 
       <!-- listen to our playlists mobile button-->
-       <div id="playlist-button-mobile" class="mobile-show"><button>Listen to our playlists</button></div>
+       <div id="playlist-button-mobile" class="mobile-show"><button><a href="https://soundcloud.com/natasha-natarajan/sets" target="_blank">Listen to our playlists on soundcloud</a></button></div>
        <!-- listen to our playlists mobile button-->
-       <div id="playlist-wrapper-mobile" class="mobile-show">
-        <img class="playlist-text" src="images/playlist-text1.png" alt="Our Playlists"/>
-        <div id="playlists">
-          <p>
-            <a href="http://soundcloud.com/natasha-natarajan/sets/thursday" class="stratus">Thursday</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/friday" class="stratus">Friday</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/saturday" class="stratus">Saturday</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/sunday" class="stratus">Sunday</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/pumpehuset" class="stratus">Pumpehuset</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/huset" class="stratus">Huset</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/forum" class="stratus">Forum</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/lille-vega" class="stratus">Lille Vega</a> /
-            <a href="https://soundcloud.com/natasha-natarajan/sets/vega" class="stratus">Store Vega</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/culturebox" class="stratus">Culturebox</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/loppen" class="stratus">Loppen</a> /
-            <a href="http://soundcloud.com/natasha-natarajan/sets/rust" class="stratus">Rust</a> </p>
-            <p>** double click on the soundcloud player to see what you've been listening to</p>
-        </div>
 
-      </div>
-
-      <!-- end playlist  box -->
 
         <div id="all-content-wrapper">
         <header>

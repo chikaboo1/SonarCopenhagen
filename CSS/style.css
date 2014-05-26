@@ -284,7 +284,7 @@ PLAYLIST BOX
 	background-color:#2e3192;
 	position:fixed;
 	z-index:200;
-	bottom:35px;
+	bottom:0;
 	color:white;
 	padding:5px;
 }
