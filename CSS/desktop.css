@@ -214,10 +214,28 @@ div#connect div.table-box {
 	width: 100% !important; 
 }
 
+
+/*
+=======================
+ sub-pages
+=======================
+*/
+
+div.contestant {
+	padding:10px 15px 10px 0;
+	padding-bottom:30%;
+	height:0;
+	position:relative;
+}
+
+div.artists {
+	padding-bottom:30%;
+	height:0;
+	position:relative;
 }
 
 
-
+}
 
 
 

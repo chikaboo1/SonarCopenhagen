@@ -1,5 +1,5 @@
 
-  <form action=''>
+  <form id="contestant-upload" action=''>
     First Name: <input type='text' name ='firstname' id='test'> <br>
     Last Name: <input type='text' name = 'lastname'> <br>
     Email: <input type='text' name = 'email'> <br>

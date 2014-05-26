@@ -11,7 +11,11 @@ include ('header.php');
 <p>We're giving the chance to perform at Sonar Copenhagen to 5 talented artists. They will play a set together at the festival. 5 runners up will also win €50 vouchers for beatport. SO GET VOTING!</p>
 <p>Click on a heat to vote for your favourite track or enter the competition yourself</p>
 
-<button class="important-button">Enter the Competition Now</button>
+<button id="contestant-upload-button" class="important-button">Enter the Competition Now</button>
+
+<?php
+include('php/form.php');
+?>
 
 <h2>Our Participants</h2>
 
@@ -21,10 +25,6 @@ include ('header.php');
 allContestants();
 ?>
 </div>
-
-<?php
-include('php/form.php');
-?>
 
 <h2 class="border-top">Facebook Raffles</h2>
 

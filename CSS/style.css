@@ -37,14 +37,13 @@ button {
 		outline: none;
 		/* Stupid IE */
 		#vertical-align:middle; /* IE6,IE7 */
+		color:inherit;
 	}
 
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
 
 
 /*
@@ -149,6 +148,17 @@ a:hover {
 
 #stratus #player {
 	z-index:200;
+}
+
+div.table-box {
+	float:left;
+	width:50%;
+	margin-top:1em;
+}
+
+.box-text-wrapper {
+	padding-bottom:25%;
+	height:0;
 }
 /*
 =======================
@@ -346,6 +356,7 @@ mobile button
 	height:auto;
 }
 
+
 /*
 =======================
 SUB-PAGES
@@ -371,8 +382,7 @@ Competition (home and subpage)
 
 div.contestant {
 	padding:10px 15px 10px 0;
-	padding-bottom:25%;
-	height:0;
+	height:auto;
 	position:relative;
 }
 
@@ -384,8 +394,6 @@ div.contestant-image {
 }
 
 div.bottom-line {
-	position:absolute;
-	bottom:0;
 	padding:10px 15px 0 0;
 	overflow:auto;
 }
@@ -411,15 +419,13 @@ div.all-contestants {
 
 /*
 =======================
-program sub-page
+artists (home and subpage)
 =======================
 */
 
 div.artists {
 	padding:10px 15px 10px 0;
-	padding-bottom:25%;
-	height:0;
-	position:relative;
 }
+
 
 

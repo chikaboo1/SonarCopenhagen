@@ -19,16 +19,17 @@ include ("php/functions.php");
          <script type="text/javascript" src ="js/php_scripts.js"></script>
         <script type="text/javascript" src ="js/facebook_scripts.js"></script>
         <script type='text/javascript'>
+         $(document).ready(function(){
         <?php
               if ($_SERVER['PHP_SELF']!='/index.php'){
-                echo "
-                   $(document).ready(function(){
-                      $('nav').hide();
+                echo "$('nav').hide();";
+              }
 
-                   });
-                ";
+              else {
+                echo "$('nav').show();";
               }
             ?> 
+                   });
     </script>
       </head>
 

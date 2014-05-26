@@ -46,4 +46,11 @@
 
  	});
 
+ 	//competition upload 
+ 	$("#contestant-upload").slideToggle();
+ 	$("#contestant-upload-button").click(function(){
+ 		$("#contestant-upload").slideToggle();
+
+ 	});
+
   });
