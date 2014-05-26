@@ -1,7 +1,5 @@
 <?php 
-include ("php/dbconnect.php");
-include ("php/functions.php");
-include ('pages/header.php');
+include ('header.php');
 ?>
             
             <div id="homepage-venues" class="homepage-div desktop-show">
