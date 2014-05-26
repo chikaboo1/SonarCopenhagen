@@ -376,6 +376,13 @@ div.contestant {
 	position:relative;
 }
 
+div.contestant-image {
+	width:100%;
+	padding-bottom:60%;
+	height:0;
+	overflow: hidden;
+}
+
 div.bottom-line {
 	position:absolute;
 	bottom:0;

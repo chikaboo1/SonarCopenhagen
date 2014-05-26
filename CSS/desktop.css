@@ -15,7 +15,7 @@
 }
 
 .desktop-show {
-	display:block;
+	display:block !important;
 }
 
 .mobile-show {

@@ -116,7 +116,7 @@ include ("php/functions.php");
              <div><button class="important-button buy-tickets"><a href="tickets.php">Buy tickets</a></button></div>
             </div>
         </div>
-          <nav>
+          <nav class="desktop-show">
             <ul id="navigation">
               <li class="nav-item"><a href="program.php">Program</a></li>
               <li class="nav-item"><a href="tickets.php">Tickets</a></li>
@@ -124,8 +124,8 @@ include ("php/functions.php");
               <li class="nav-item"><a href="news.php">News</a></li>
               <li class="nav-item"><a href="competition.php">Competitions</a></li>
               <li class="nav-item"><a href="gallery.php">Gallery</a></li>
-              <li class="nav-item"><a href="gallery.php">About</a></li>
-              <li class="nav-item" id="socialmediaicons"><a href=""><img class="nav-socialmedia" id="nav-facebook" src="images/social-media/facebook.png"/></a><a href=""><img class="nav-socialmedia"class="nav-socialmedia"  id="nav-soundcloud" src="images/social-media/soundcloud.png"/></a><a href=""><img class="nav-socialmedia" id="nav-twitter" src="images/social-media/twitter.png"/></a></li>
+              <li class="nav-item"><a href="about.php">About</a></li>
+              <li class="nav-item" id="socialmediaicons"><a href="https://www.facebook.com/SonarFestivalOfficialPage"><img class="nav-socialmedia" id="nav-facebook" src="images/social-media/facebook.png"/></a><a href="http://www.soundcloud.com/natasha-natarajan"><img class="nav-socialmedia"class="nav-socialmedia"  id="nav-soundcloud" src="images/social-media/soundcloud.png"/></a><a href="https://twitter.com/SonarFestival"><img class="nav-socialmedia" id="nav-twitter" src="images/social-media/twitter.png"/></a></li>
             </ul>
           </nav>
           </header>
