@@ -229,9 +229,28 @@ div.contestant {
 }
 
 div.artists {
-	padding-bottom:30%;
+	padding-bottom:25%;
 	height:0;
 	position:relative;
+}
+
+form#program-filter div.program-checkbox-wrapper {
+	width:45%;
+}
+
+/*
+=======================
+Competition (subpage)
+=======================
+*/
+
+#contestant-upload div.input-wrapper {
+	-webkit-column-count:2; /* Chrome, Safari, Opera */
+	-moz-column-count:2; /* Firefox */
+	column-count:2;
+	-webkit-column-gap:5%; /* Chrome, Safari, Opera */
+	-moz-column-gap:5%; /* Firefox */
+	column-gap:5%;
 }
 
 
