@@ -74,6 +74,7 @@ function allArtists () {
 		 echo "<p class = 'daytime'>" . $row['day'] . " " . $row['time'] . "</p>";
 		 echo "<p class = 'venue'>" . $row['venue'] ."</p>";
 		  echo "</div>";
+		  // echo "<div class='artists-description'><p class='artist-text'>".$row['description']."</p></div";
 }
 }
 
