@@ -80,7 +80,7 @@ body {
 h1 {
 	font-family:'Helvetica-Heavy', sans-serif;
 	font-size; 1.5em;
-	margin:1em 0;
+	margin:0.5em 0;
 	text-transform: uppercase;
 	color:#2e3192;
 }
@@ -511,9 +511,7 @@ div.artists div.artist-image div.artist-play .play-full:before {
 
 }
 
-div.artists div.artist-image:hover div.artist-play {
-	display:table-cell;
-}
+
 
 #program-filter {
 	padding:10px 0;

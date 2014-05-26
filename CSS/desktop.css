@@ -237,6 +237,9 @@ form#program-filter div.program-checkbox-wrapper {
 	width:45%;
 }
 
+div.artists div.artist-image:hover div.artist-play {
+	display:table-cell;
+}
 /*
 =======================
 Competition (subpage)
