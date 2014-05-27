@@ -130,6 +130,9 @@ button a {
 	cursor: pointer;
 }
 
+.important-button a {
+	color:white;
+}
 .important-button a:visited{
 	color:white ;
 }
@@ -359,10 +362,11 @@ mobile button
 
 #mobile-menu-button {
 	position:absolute;
-	top:30px;
-	right:5%;
+	top:10px;
+	right:20px;
 	width:10%;
 	height:auto;
+	font-weight: bold;
 }
 
 
@@ -397,6 +401,7 @@ div.contestant {
 
 div.box-text-wrapper {
 	height:90px;
+	padding-top: 10px;
 }
 
 div.contestant-image {
@@ -421,7 +426,7 @@ div.bottom-line p.votes{
 	float:right;
 }
 
-div.all-contestants {
+div#all-contestants {
 	overflow:auto;
 	margin:1em 0;
 }

@@ -1,1 +1,1 @@
-<div id="mobile-menu-button" class="mobile-show"><img src="images/mobile-menu.jpg" alt="mobile menu button"/></div>
+<div id="mobile-menu-button" class="mobile-show">MENU</div>

@@ -175,7 +175,10 @@ div.venues-slide-in p {
 }
 
 div.venues-slide-in {
-	width:60%;
+	width:100%;
+	padding-bottom:100%;
+	height:0;
+	background-color:white;
 	margin:auto;
 	text-align: center;
 	margin-top:300px;
@@ -184,16 +187,20 @@ div.venues-slide-in {
  	-o-transition:      all 0.4s ease;
 
 }
-div#venues div.table-box:hover {
-	background-image:none;
+
+div.venues-slide-in div.important-button {
+	width:60%;
+	margin:auto;
 }
 
 div#venues div.table-box:hover div.venues-slide-in{
-	margin-top:30%;
+	margin-top:0;
+	padding-top: 30%;
 }
 
 div.venues-slide-in:hover {
-	margin-top:30%;
+	margin-top:0;
+	padding-top: 30%;
 }
 
 /*
@@ -202,8 +209,8 @@ Connect
 =======================
 */
 
-div#connect div.homepage-facebook {
-	width:50%;
+div#connect div.homepage-connect {
+	width:33.3%;
 }
 
 div#connect div.table-box {
