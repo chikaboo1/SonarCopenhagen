@@ -7,7 +7,7 @@
 	$artistName = $_POST['artistname'];
 	$trackTitle = $_POST['tracktitle'];
 	$soundName = $_POST['soundname'];
-	$siteLink = $_POST['sitelinke'];
+	$siteLink = $_POST['sitelink'];
 
 if ($_FILES == true) {
 		$error_msg = array();
@@ -51,12 +51,14 @@ if ($_FILES == true) {
 
 			$result=mysql_query($query);
 
-			echo "<h4>Awesome! You've been added to the competion. Good Luck!</h4>";
+			echo "<h4>Awesome! You've been added to the competion. Good Luck! You'll have to refresh the page to see your entry..</h4>";
 		} else {
 			foreach ($error_msg as $value) {
 			echo "<h4>" . $value . "</h4>";
 			}
 		}
+	} else{
+		echo "<h4>You'll need upload an image! </h4>";
 	}
 
 
