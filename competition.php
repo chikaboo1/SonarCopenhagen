@@ -20,7 +20,7 @@ include('php/form.php');
 <h2>Our Participants</h2>
 
 <p><a href="https://soundcloud.com/natasha-natarajan/sets/competition" class="stratus">Listen to the full playlist<span class="play-empty"></span></a></p>
-<div class="all-contestants">
+<div id="all-contestants">
 <?php
 allContestants();
 ?>

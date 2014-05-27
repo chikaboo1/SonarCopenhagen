@@ -7,6 +7,7 @@ if (!$connection) {
 }
 
 $db_selected = mysql_select_db("s14exam11", $connection);
+//$db_selected = mysql_select_db("mydb", $connection);
 if (!$db_selected) {
   die ('Can\'t use db : ' . mysql_error());
 }

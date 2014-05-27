@@ -1,5 +1,6 @@
 <?php
 	include ("dbconnect.php");
+	include ("functions.php");
 
 	$firstName = $_POST['firstname'];
 	$lastName = $_POST['lastname'];
@@ -51,7 +52,7 @@ if ($_FILES == true) {
 
 			$result=mysql_query($query);
 
-			echo "<h4>Awesome! You've been added to the competion. Good Luck! You'll have to refresh the page to see your entry..</h4>";
+			echo allContestants();
 		} else {
 			foreach ($error_msg as $value) {
 			echo "<h4>" . $value . "</h4>";
@@ -60,6 +61,8 @@ if ($_FILES == true) {
 	} else{
 		echo "<h4>You'll need upload an image! </h4>";
 	}
+
+
 
 
 

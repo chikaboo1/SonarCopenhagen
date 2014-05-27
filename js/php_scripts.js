@@ -42,7 +42,20 @@
         //if the http request was OK
         if (xml.status === 200) {
           // we put the response data in the mydiv
-          document.getElementById("myDiv").innerHTML = xml.responseText;
+          //
+
+          //if the response data is longer than 259 character, this means it has completed and is sending back all the contestants. So we replace the current all-contestants with the new one, which has the latest entry
+          if (xml.responseText.length > 259) {
+            document.getElementById("myDiv").innerHTML =  "<h2>Awesome! You've been added to the competion. </h2><h2>Check out your entry below</h2> <h2>Good Luck! </h2>";
+
+            document.getElementById("all-contestants").innerHTML = xml.responseText;
+          }
+            //this means the response was 259 or less character long. Which means all the contestants didn't get sent back. Which means there was an error. We put this error message into the myDiv right by the submit form
+            else {
+
+              document.getElementById("myDiv").innerHTML = xml.responseText;
+          }
+
         } else {
           //or we send an alert window saying there was a problem with their request to the server.
           alert('There was a problem with the request.');
