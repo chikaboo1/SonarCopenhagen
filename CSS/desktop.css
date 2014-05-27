@@ -76,24 +76,12 @@ position:relative;
 }
 
 
-li#socialmediaicons {
-	padding:0 0;
-	position:absolute;
-	top:4px;
-	right:0;;
-	width:auto;
+#socialmediaicons {
+	position: inherit;
+	display:inline-block;
+	vertical-align: bottom;
 }
 
-.nav-socialmedia{
-	padding: 0px;
-}
-
-
-
-li.nav-item a img {
-	margin:0 2px;
-	vertical-align: middle;
-}
 
 /*
 =======================

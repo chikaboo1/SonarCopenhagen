@@ -95,7 +95,7 @@ include ("php/functions.php");
              <p class="nowrap desktop-show">4 days. 8 venues. 50 artists. 1 experience.</p>
              <p class="nowrap" id="sonarcph">Sonar Copenhagen</p>
              <p class="nowrap" id="sonardates">October 16th-19th</p>
-             <div><button class="important-button buy-tickets desktop-show"><a href="tickets.php">Buy tickets</a></button></div>
+             <div class="buy"><button class="important-button buy-tickets desktop-show"><a href="tickets.php">Buy tickets</a></button></div><div id="socialmediaicons"><a href="https://www.facebook.com/SonarFestivalOfficialPage"><img class="nav-socialmedia" id="nav-facebook" src="images/social-media/facebook.png"/></a><a href="http://www.soundcloud.com/natasha-natarajan"><img class="nav-socialmedia"class="nav-socialmedia"  id="nav-soundcloud" src="images/social-media/soundcloud.png"/></a><a href="https://twitter.com/SonarFestival"><img class="nav-socialmedia" id="nav-twitter" src="images/social-media/twitter.png"/></a></div>
             </div>
         </div>
           <nav class="desktop-show">
@@ -106,8 +106,9 @@ include ("php/functions.php");
               <li class="nav-item"><a href="news.php">News</a></li>
               <li class="nav-item"><a href="competition.php">Competitions</a></li>
               <li class="nav-item"><a href="gallery.php">Gallery</a></li>
+              <li class="nav-item"><a href="sonard.php">Sonar +D</a></li>
               <li class="nav-item"><a href="about.php">About</a></li>
-              <li class="nav-item" id="socialmediaicons"><a href="https://www.facebook.com/SonarFestivalOfficialPage"><img class="nav-socialmedia" id="nav-facebook" src="images/social-media/facebook.png"/></a><a href="http://www.soundcloud.com/natasha-natarajan"><img class="nav-socialmedia"class="nav-socialmedia"  id="nav-soundcloud" src="images/social-media/soundcloud.png"/></a><a href="https://twitter.com/SonarFestival"><img class="nav-socialmedia" id="nav-twitter" src="images/social-media/twitter.png"/></a></li>
+              
             </ul>
           </nav>
           </header>

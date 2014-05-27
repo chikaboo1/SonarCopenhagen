@@ -133,6 +133,7 @@ button a {
 .important-button a {
 	color:white;
 }
+
 .important-button a:visited{
 	color:white ;
 }
@@ -294,6 +295,7 @@ PLAYLIST BOX
 	bottom:0;
 	color:white;
 	padding:5px;
+	width:auto;
 }
 
 #playlist-button-mobile:visited {
@@ -322,6 +324,11 @@ HEADER
 	padding-left:10px;
 }
 
+div.buy {
+	width:105px;
+	display: inline-block;
+}
+
 .buy-tickets {
 	color:white !important;
 	margin-top:0.3em;
@@ -346,11 +353,26 @@ li.nav-item a {
 	color:#333;
 }
 
+#socialmediaicons {
+	position:fixed;
+	z-index:200;
+	bottom:0;
+	right:0;
+	width:auto;
+	vertical-align: middle;
+
+}
 
 .nav-socialmedia{
-	width:30px;
+	width:37px;
 	height:auto;
-	padding: 10px 5px 0px 0px;
+	padding: 0 3px;
+	vertical-align: bottom;
+}
+
+
+.nav-socialmedia img {
+	vertical-align: bottom;
 }
 
 
@@ -367,6 +389,7 @@ mobile button
 	width:10%;
 	height:auto;
 	font-weight: bold;
+	cursor:pointer;
 }
 
 
