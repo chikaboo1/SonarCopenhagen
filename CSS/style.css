@@ -81,7 +81,7 @@ h1 {
 	text-transform: uppercase;
 	color:#2e3192;
 	border-top: 1px solid #333;
-	margin-top:10px;
+	margin-top:1em;
 }
 
 h1:before {
@@ -531,10 +531,26 @@ div.artists div.artist-image div.artist-play {
 	vertical-align: middle;
 }
 
+div.artists div.artist-image div.artist-play a {
+	vertical-align: top;
+	line-height:0;
+}
+
+div.artists div.artist-image div.artist-play a span {
+	vertical-align: top;
+	line-height:0;
+}
+
+div.artists div.artist-image div.artist-play:before {
+	display:block;
+	content:"";
+	height:50%;
+} 
+
 div.artists div.artist-image div.artist-play .play-full:before {
 	color:white;
 	font-size:3em;
-
+	vertical-align: top;
 
 }
 
