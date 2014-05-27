@@ -95,7 +95,7 @@ include ("php/functions.php");
              <p class="nowrap desktop-show">4 days. 8 venues. 50 artists. 1 experience.</p>
              <p class="nowrap" id="sonarcph">Sonar Copenhagen</p>
              <p class="nowrap" id="sonardates">October 16th-19th</p>
-             <div><button class="important-button buy-tickets"><a href="tickets.php">Buy tickets</a></button></div>
+             <div><button class="important-button buy-tickets desktop-show"><a href="tickets.php">Buy tickets</a></button></div>
             </div>
         </div>
           <nav class="desktop-show">

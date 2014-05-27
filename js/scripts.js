@@ -36,7 +36,7 @@
 
     // stratus player
 
-    if ($(window).width() > 700) {
+    if ($(window).width() > 760) {
  	$.stratus({
       links: 'https://soundcloud.com/natasha-natarajan/sets/vega',
       color: '2e3192'
@@ -50,7 +50,7 @@
  	});
 
  	//competition upload 
- 	$("#contestant-upload").slideToggle();
+ 	$("#contestant-upload").hide();
  	$("#contestant-upload-button").click(function(){
  		$("#contestant-upload").slideToggle();
 
