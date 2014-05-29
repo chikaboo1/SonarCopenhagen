@@ -1,7 +1,8 @@
 <?php
+//this will bring the html head and naviational structure into the document
 include ('header.php');
 ?>
-
+          <!-- these are venues and the artists that will appear on hover -->
             <div id="homepage-venues" class="homepage-div desktop-show">
               <div id="venues" class="homepage">
                   <div class="table-box pumpehuset">
@@ -61,26 +62,26 @@ include ('header.php');
                     </div>
                   </div>
               </div>
-
+              <!-- button to the full program -->
               <button id="home program" class="important-button">See the full program </button>
 
             </div>
         </div>
 
-
+            <!-- Competition section of homepage -->
             <div id="homepage-competition" class="homepage-div desktop-show">
               <div class="homepage-title">
                 <h1>Competition</h1>
                 <p>5 artists will get the chance to perform at the festival this year but who will they be? We're running a competition where you, our audience, get to participate and decide who you think is an upcoming artist in the electronic dance music scene.</p>
               </div>
               <?php
-
+                //bring in the contestants with the four highest votes
                 top_four();
 
               ?>
 
             </div>
-
+            <!-- connect with us section -  -->
             <div id="homepage-connect" class="homepage-div desktop-show">
               <div class="homepage-title"><h1>Connect</h1></div>
                 <div id="connect" class="homepage">
@@ -97,5 +98,6 @@ include ('header.php');
               </div>
 
            <?php
+           //this is where the footer is brought in
             include('footer.php');
            ?>

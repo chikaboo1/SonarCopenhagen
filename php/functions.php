@@ -47,6 +47,7 @@ function top_four(){
 	  return $b[1] - $a[1];
 	}
 
+	//this function will go into the contestants table of the database and output all the different contestants in html
 	function allContestants() {
 		$contestantInfo = "SELECT * FROM contestants";
 		$resultInfo = mysql_query($contestantInfo);
@@ -63,6 +64,7 @@ function top_four(){
 
 	}
 
+//this is a function that will go into the artists table of our database and output all information about each artist in html.
 function allArtists () {
 		$artistInfo = "SELECT * FROM artists";
 		$artistResult = mysql_query($artistInfo);

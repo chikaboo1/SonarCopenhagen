@@ -1,8 +1,6 @@
- var xml;
+ var xml; //var that will be used for ajax
 
  //this function sends all our contestant information to our php files to be uploaded to our database. It is done via ajax, so no page refresh is required.
-
-
   function add(){
 
     //gets the first form element in the doc. since we only have one, it will find our upload form

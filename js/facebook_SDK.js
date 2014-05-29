@@ -1,4 +1,6 @@
 //this is taken from developer.facebook.com - it is their own quick initialization for their SDK
+//
+//It connects you with facebook so you can use their functions
 window.fbAsyncInit = function() {
   FB.init({
     appId      : '712639635464013',

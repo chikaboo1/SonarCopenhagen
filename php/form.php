@@ -1,4 +1,4 @@
-
+<!-- the upload form -->
   <form id="contestant-upload" action=''>
     <h2>Fill in the following form to enter the competition today</h2>
     <div class="input-wrapper"><p>First Name*</p> <input type='text' name ='firstname' id='test'>
