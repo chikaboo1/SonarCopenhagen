@@ -11,7 +11,7 @@
 
     //sees if there was some sort connection and upload to the php
     xml.upload.addEventListener('load',function(e){
-      console.log('some sort of mother fucking connection!');
+      console.log('Congrats! There was a connection');
     },false);
 
     //listens to see if the submit button has been clicked.
