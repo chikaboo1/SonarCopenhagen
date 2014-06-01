@@ -14,6 +14,7 @@ include ("php/functions.php");
         <link href="CSS/style.css" type="text/css" rel="stylesheet"/>
         <link href="CSS/desktop.css" type="text/css" rel="stylesheet"/>
 		<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src ="js/instafeed.js"></script>
          <script type="text/javascript" src="js/stratus.js"></script>
          <script type="text/javascript" src="js/scripts.js"></script>
          <script type="text/javascript" src ="js/php_scripts.js"></script>
@@ -108,6 +109,7 @@ include ("php/functions.php");
               <li class="nav-item"><a href="gallery.php">Gallery</a></li>
               <li class="nav-item"><a href="sonard.php">Sonar +D</a></li>
               <li class="nav-item"><a href="about.php">About</a></li>
+              <li class="nav-item">Search</li>
               
             </ul>
           </nav>

@@ -66,6 +66,16 @@ font-family: 'Helvetica-Heavy';
 src: url(../extras/HelveticaNeueLTStd-Hv.otf) format('opentype');
 }
 
+
+#stratus #player {
+	z-index:200;
+}
+
+.desktop-show {
+	display:none;
+}
+
+
 body {
 	 color:#333;
 	 font-family: "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue",
@@ -74,6 +84,20 @@ body {
   padding-bottom:50px;
 }
 
+#all-content-wrapper {
+	overflow: auto;
+	width:90%;
+	margin:auto;
+	padding-bottom:40px;
+}
+
+div.table-box {
+	float:left;
+	width:50%;
+	margin-top:1em;
+}
+
+
 h1 {
 	font-family:'Helvetica-Heavy', sans-serif;
 	font-size: 1.5em;
@@ -81,7 +105,7 @@ h1 {
 	text-transform: uppercase;
 	color:#2e3192;
 	border-top: 1px solid #333;
-	margin-top:1em;
+
 }
 
 h1:before {
@@ -103,6 +127,7 @@ h3 {
   	font-size: 1.2em;
   	font-weight:bold;
 	color:#2e3192;
+	padding:0.3em 0;
 }
 
 .border-top {
@@ -143,26 +168,15 @@ button a {
 	white-space: nowrap;
 }
 
-#all-content-wrapper {
-	overflow: auto;
-	width:90%;
-	margin:auto;
-	padding-bottom:40px;
+.large {
+	font-size:1.5em;
 }
 
-.desktop-show {
-	display:none;
+.highlight-red {
+	color:red;
 }
 
-#stratus #player {
-	z-index:200;
-}
 
-div.table-box {
-	float:left;
-	width:50%;
-	margin-top:1em;
-}
 
 /*
 =======================
@@ -264,28 +278,6 @@ PLAYLIST BOX
 	color:white;
 }
 
-#playlist-wrapper-mobile {
-	position:fixed;
-	z-index:100;
-	bottom:60px;
-	width:100%;
-	height:300px;
-	height:auto;
-	background-color:#2e3192;
-	color:white;
-
-}
-
-#playlist-wrapper-mobile #playlists {
-	padding:0 10px 15px 10px;
-	line-height:1.4em;
-}
-
-#playlist-wrapper-mobile  img.playlist-text {
-	position:initial;
-	width:50%;
-
-}
 
 #playlist-button-mobile {
 	background-color:#2e3192;
@@ -310,6 +302,7 @@ HEADER
 
 #heading-wrapper {
 	margin-top:1em;
+	margin-bottom: 1em;
 	width:100%;
 }
 
@@ -339,9 +332,6 @@ NAVIGATION
 =======================
 */
 
-#navigation {
-	padding-top:20px;
-}
 
 .nav-item {
 	padding:5px 0;
@@ -580,5 +570,20 @@ div.artists div.artist-image div.artist-play .play-full:before {
 	-webkit-column-gap:10px; /* Chrome, Safari, Opera */
 	-moz-column-gap:10px; /* Firefox */
 	column-gap:10px;
+}
+
+/*
+=======================
+Information
+=======================
+*/
+
+#information p.large {
+	padding-bottom:20px;
+}
+
+#instafeed a img {
+	width:45%;
+	padding-right: 10px;
 }
 
