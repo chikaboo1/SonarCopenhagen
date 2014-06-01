@@ -492,6 +492,11 @@ font-size:1em;
 }
 
 
+img.competition {
+	max-width:250px;
+	margin-top:20px;
+}
+
 /*
 =======================
 Program

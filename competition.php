@@ -32,6 +32,8 @@ allContestants();
 
 <p>Check out the competitions we've had so far:</p>
 
+<img class="competition" src="images/pages/competition1.jpg" alt="competition poster"/>
+
 <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="200" data-layout="button" data-action="like" data-show-faces="true" data-share="true"></div>
 
 </div>

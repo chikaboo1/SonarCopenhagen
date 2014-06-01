@@ -7,6 +7,13 @@
 
 }
 
+/*
+=======================
+DESKTOP CSS
+=======================
+*/
+
+
 @media screen and (min-width:760px){
 
 #all-content-wrapper {
@@ -32,6 +39,7 @@ h1 {
 PLAYLIST BOX
 =======================
 */
+
 #playlist-wrapper-desktop {
 	display:block;
 
@@ -64,6 +72,10 @@ HEADER
 NAVIGATION
 =======================
 */
+
+nav {
+	display: block !important;
+}
 
 #navigation {
 border-top:1px solid #333;
@@ -196,6 +208,10 @@ div.venues-slide-in:hover {
 	padding-top: 30%;
 }
 
+button#home-program {
+	margin-top:30px;
+}
+
 /*
 =======================
 Connect
@@ -214,6 +230,16 @@ div#connect div.table-box {
 	width: 100% !important; 
 }
 
+#news-box p {
+	font-size: 0.9em;
+	padding-top:10px;
+}
+
+#news-box p.news-info {
+	padding:0 0 10px 0;
+	font-size: 0.8em;
+	color:#999;
+}
 
 /*
 =======================

@@ -63,7 +63,7 @@ include ('header.php');
                   </div>
               </div>
               <!-- button to the full program -->
-              <button id="home program" class="important-button">See the full program </button>
+              <button id="home-program" class="important-button">See the full program </button>
 
             </div>
         </div>
@@ -88,10 +88,18 @@ include ('header.php');
                     <div class="table-box homepage-connect"><h2>Like us</h2></div>
                     <div class="table-box homepage-connect"><h2>Ask us a question</h2></div>
                     <div class="table-box homepage-connect"><h2>Keep up to date</h2></div>
+                    <!-- facebook feed box -->
                     <div class="table-box homepage-connect"><div class="fb-like-box" data-href="https://www.facebook.com/SonarFestivalOfficialPage" data-width="90%" data-height="500px" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="true" data-show-border="true"></div></div>
+                   <!-- twitter feed box-->
                     <div class="table-box homepage-connect"><a class="twitter-timeline" href="https://twitter.com/SonarFestival" data-widget-id="468708489062150144">Tweets by @SonarFestival</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
-</div>
+                    <div class="table-box homepage-connect" id="news-box">
+                          <a href="#"><h3>Beatport confirms that they will be giving away vouchers</h3></a>
+                          <p class="news-info ">Luke Pommershemin / 5th June 2014</p>
+                          <a href="#"><img src="images/pages/news-item.jpg" alt="sample news item"/></a>
+                          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis...<p>
+                    </div>
+                </div>
 
                 </div>
 

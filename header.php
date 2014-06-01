@@ -25,6 +25,8 @@ include ("php/functions.php");
         <script type='text/javascript'>
          $(document).ready(function(){
         <?php
+
+        //to hide navigation
               if ($_SERVER['PHP_SELF']!='/index.php'){
                 echo "$('nav').hide();";
               }
@@ -83,7 +85,6 @@ include ("php/functions.php");
 
       <!-- listen to our playlists mobile button-->
        <div id="playlist-button-mobile" class="mobile-show"><button><a href="https://soundcloud.com/natasha-natarajan/sets" target="_blank">Listen to our playlists on soundcloud</a></button></div>
-       <!-- listen to our playlists mobile button-->
 
 
         <div id="all-content-wrapper">
@@ -102,7 +103,7 @@ include ("php/functions.php");
              <p><div class="buy"><button class="important-button buy-tickets desktop-show"><a href="tickets.php">Buy tickets</a></button></div><div id="socialmediaicons"><a href="https://www.facebook.com/SonarFestivalOfficialPage" target="_blank"><img class="nav-socialmedia" id="nav-facebook" src="images/social-media/facebook.png"/></a><a href="http://www.soundcloud.com/natasha-natarajan" target="_blank"><img class="nav-socialmedia"class="nav-socialmedia"  id="nav-soundcloud" src="images/social-media/soundcloud.png"/></a><a href="https://twitter.com/SonarFestival" target="_blank"><img class="nav-socialmedia" id="nav-twitter" src="images/social-media/twitter.png"/></a></div></p>
             </div>
         </div>
-          <nav class="desktop-show">
+          <nav>
             <ul id="navigation">
               <li class="nav-item"><a href="program.php">Program</a></li>
               <li class="nav-item"><a href="tickets.php">Tickets</a></li>
