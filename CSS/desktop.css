@@ -51,11 +51,6 @@ HEADER
 =======================
 */
 
-
-#instafeed{
-	height: 600px;
-}
-
 #main-logo {
 	max-width:300px;
 	display:inline-block;
@@ -310,6 +305,16 @@ About Us
 	width:24.5%;
 }
 
+/*
+=======================
+information page
+=======================
+*/
+
+
+#google-maps{
+	height: 600px;
+}
 
 }
 

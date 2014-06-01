@@ -592,6 +592,21 @@ Information
 	padding-right: 10px;
 }
 
+#google-maps {
+	width:100%;
+	height:500px;
+}
+
+#google-maps {
+	width:100%;
+	height:350px;
+}
+
+#google-maps iframe {
+	width:100%;
+	height:100%;
+}
+
 /*
 =======================
 Gallery 

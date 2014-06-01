@@ -9,47 +9,59 @@ include ('header.php');
 
 <h2 class="border-top" id="venues">The Venues</h2>
 
-<!-- p>Huset</p>
-<p>Store Vega</p>
-<p>Pumpehuset</p>
-<p>Forum</p>
-<p>Lille Vega</p>
-<p>Culturebox</p>
-<p>Loppen</p>
-<p>Rust</p>
-
-<h3>Latest in <span>Huset</span></h3> -->
-
-<h1 id='instagram'>get the instagram</h1>
-<h1 id='address'1>get hte address</h1>
-
-
-<h3>Pumpehuset</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra ipsum eu diam sodales fermentum. Ut eget feugiat neque.</p>
-<p>
-	<button type='submit' onclick="placeInstagram('pumpehuset');">instagram</button>
-	<button type= 'submit' onclick="placeMap(55.677294, 12.565205);">show map info</button>
-</p>
+<div id="google-maps"><iframe src="https://mapsengine.google.com/map/embed?mid=z5BHJ4rKxSGI.k2PngD4VyH68"></iframe></div>
 
 <h3>Huset</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra ipsum eu diam sodales fermentum. Ut eget feugiat neque.</p>
-<p>
-	<button type='submit' onclick="placeInstagram('husetkbh');">instagram</button>
-	<button type= 'submit' onclick="placeMap(55.676549, 12.574690);">show map info</button>
-</p>
+<p>blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
+<p><a href="http://www.huset-kbh.dk">the website</a> / address text address text address text</p>
 
+<h3>Pumpehuset</h3>
+<p>blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
+<p><a href="http://www.pumpehuset.dk">the website</a> / address text address text address text</p>
+
+
+<h3>Loppen</h3>
+<p>blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
+<p><a href="http://www.loppen.dk">the website</a> / address text address text address text</p>
+
+
+<h3>Lille Vega</h3>
+<p>blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
+<p><a href="http://www.vega.dk">the website</a> / address text address text address text</p>
+
+<h3>Store Vega</h3>
+<p>blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
+<p><a href="http://www.vega.dk">the website</a> / address text address text address text</p>
+
+
+<h3>Forum</h3>
+<p>blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
+<p><a href="http://www.forumcopenhagen.dk">the website</a> address text address text address text</p>
+
+
+<h3>Culturebox</h3>
+<p>blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
+<p><a href="http://www.culture-box.com">the website</a> / address text address text address text</p>
+
+
+<h3>Rust</h3>
+<p>blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
+<p><a href="http://www.rust.dk">the website</a> / address text address text address text</p>
 
 
 <div id="instafeed" class="desktop-show">
 
 
-<h3>troighjrosigh;wrtsgn;f</h3>
-
 </div>
 
 
 <h2 class="border-top" id="accommodation">Accommodation</h2>
+
+<p></p>
+
 <h2 class="border-top" id="travel">Travel</h2>
+
+<p></p>
 
 
 </div>

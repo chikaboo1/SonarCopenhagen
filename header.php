@@ -14,8 +14,6 @@ include ("php/functions.php");
         <link href="CSS/style.css" type="text/css" rel="stylesheet"/>
         <link href="CSS/desktop.css" type="text/css" rel="stylesheet"/>
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-        <script type="text/javascript"
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByCYujk0zcsiYujMiWALXnrXqPwTdKQe8&sensor=false"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src ="js/instafeed.js"></script>
          <script type="text/javascript" src="js/stratus.js"></script>
