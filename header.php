@@ -9,10 +9,13 @@ include ("php/functions.php");
 <!DOCTYPE html>
 <html lang="en">
     <head>
-      <meta charset="utf-8"> 
+      <meta charset="utf-8">
         <meta name="viewport" content="width=device-width"/>
         <link href="CSS/style.css" type="text/css" rel="stylesheet"/>
         <link href="CSS/desktop.css" type="text/css" rel="stylesheet"/>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+        <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyByCYujk0zcsiYujMiWALXnrXqPwTdKQe8&sensor=false"></script>
 		<script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src ="js/instafeed.js"></script>
          <script type="text/javascript" src="js/stratus.js"></script>
@@ -29,7 +32,7 @@ include ("php/functions.php");
               else {
                 echo "$('nav').show();";
               }
-            ?> 
+            ?>
                    });
     </script>
       </head>
@@ -110,7 +113,7 @@ include ("php/functions.php");
               <li class="nav-item"><a href="sonard.php">Sonar +D</a></li>
               <li class="nav-item"><a href="about.php">About</a></li>
               <li class="nav-item">Search</li>
-              
+
             </ul>
           </nav>
           </header>

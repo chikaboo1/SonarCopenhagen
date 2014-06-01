@@ -14,6 +14,25 @@ $(function(){
 		instafeed.innerHTML = feed.run();
 
 	});
+
+
+
+function initialize() {
+  var mapOptions = {
+    zoom: 8,
+    center: new google.maps.LatLng(-34.397, 150.644)
+  };
+
+  var map = new google.maps.Map(document.getElementById('instafeed'),
+      mapOptions);
+}
+
+
+$('#address').click(function(){
+	var instafeed = document.getElementById("instafeed");
+		instafeed.innerHTML = initialize();
+});
+
 });
 </script>
 
@@ -36,7 +55,7 @@ $(function(){
 <h3>Latest in <span>Huset</span></h3> -->
 
 <h1 id='instagram'>get the instagram</h1>
-<h1>get hte address</h1>
+<h id='address'1>get hte address</h1>
 <div id="instafeed">
 
 
