@@ -14,43 +14,43 @@ include ('header.php');
                   </div>
                   <div class="table-box huset">
                     <div class="venues-slide-in">
-                      <p>Bonobo</p>
-                      <p>Plasticman</p>
+                      <p>Trentemøller</p>
+                      <p>GusGus</p>
                       <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box forum">
                     <div class="venues-slide-in">
-                      <p>Bonobo</p>
-                      <p>Plasticman</p>
+                      <p>Richie Hawtin</p>
+                      <p>Massive Attack</p>
                       <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box lillevega">
                     <div class="venues-slide-in">
-                      <p>Bonobo</p>
-                      <p>Plasticman</p>
+                      <p>Four Tet</p>
+                      <p>Lykke Li</p>
                       <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box storevega">
                     <div class="venues-slide-in">
-                      <p>Bonobo</p>
-                      <p>Plasticman</p>
+                      <p>Rudimental</p>
+                      <p>Woodkid</p>
                       <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box culturebox">
                     <div class="venues-slide-in">
-                      <p>Bonobo</p>
-                      <p>Plasticman</p>
+                      <p>Pretty Lights</p>
+                      <p>Jon Hopkins</p>
                       <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box loppen">
                     <div class="venues-slide-in">
-                      <p>Bonobo</p>
-                      <p>Plasticman</p>
+                      <p>Major Lazer</p>
+                      <p>Todd Terje</p>
                       <div class="important-button"><a href"program.php">See More</a></div>
                     </div>
                   </div>
