@@ -117,7 +117,7 @@ h1:before {
 h2 {
 	font-family:'Helvetica-Heavy', sans-serif;
 	font-size: 1.2em;
-	padding:0.5em 0;
+	padding:1.2em 0;
 	color:#2e3192;
 }
 
@@ -598,4 +598,20 @@ Gallery
 	width:100%;
 	height:auto;
 	padding-bottom:10px;
+}
+
+
+/*
+=======================
+About Us 
+=======================
+*/
+
+#about-us p {
+	padding:15px 0;
+}
+
+#sponsors img {
+	width:49%;
+	vertical-align: middle;
 }

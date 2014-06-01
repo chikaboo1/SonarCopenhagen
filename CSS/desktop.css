@@ -270,6 +270,16 @@ Gallery
 	column-gap:10px;
 }
 
+/*
+=======================
+About Us
+=======================
+*/
+
+#sponsors img {
+	width:24.5%;
+}
+
 
 }
 

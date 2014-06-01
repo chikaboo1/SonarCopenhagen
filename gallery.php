@@ -2,14 +2,6 @@
 include ('header.php');
 ?>
 
-<script type="text/javascript" src ="js/collagePlus.js"></script>
-<script type="text/javascript">
-	 $(window).load(function () {
-        $('.collage').collagePlus();
-    });
-
-</script>
-
 <h1>Gallery</h1>
 
   <div class="gallery-columns">
