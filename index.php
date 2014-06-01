@@ -1,5 +1,5 @@
 <?php
-//this will bring the html head and naviational structure into the document
+//this will bring the html head and navigational structure into the document
 include ('header.php');
 ?>
           <!-- these are venues and the artists that will appear on hover -->
@@ -9,56 +9,56 @@ include ('header.php');
                     <div class="venues-slide-in">
                       <p>Bonobo</p>
                       <p>Plasticman</p>
-                      <div class="important-button"><a href="pages/program.php">See More</a></div>
+                      <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box huset">
                     <div class="venues-slide-in">
                       <p>Bonobo</p>
                       <p>Plasticman</p>
-                      <div class="important-button"><a href="pages/program.php">See More</a></div>
+                      <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box forum">
                     <div class="venues-slide-in">
                       <p>Bonobo</p>
                       <p>Plasticman</p>
-                      <div class="important-button"><a href="pages/program.php">See More</a></div>
+                      <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box lillevega">
                     <div class="venues-slide-in">
                       <p>Bonobo</p>
                       <p>Plasticman</p>
-                      <div class="important-button"><a href="pages/program.php">See More</a></div>
+                      <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box storevega">
                     <div class="venues-slide-in">
                       <p>Bonobo</p>
                       <p>Plasticman</p>
-                      <div class="important-button"><a href="pages/program.php">See More</a></div>
+                      <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box culturebox">
                     <div class="venues-slide-in">
                       <p>Bonobo</p>
                       <p>Plasticman</p>
-                      <div class="important-button"><a href="pages/program.php">See More</a></div>
+                      <div class="important-button"><a href="program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box loppen">
                     <div class="venues-slide-in">
                       <p>Bonobo</p>
                       <p>Plasticman</p>
-                      <div class="important-button"><a href"pages/program.php">See More</a></div>
+                      <div class="important-button"><a href"program.php">See More</a></div>
                     </div>
                   </div>
                   <div class="table-box rust">
                     <div class="venues-slide-in">
                       <p>Bonobo</p>
                       <p>Plasticman</p>
-                      <div class="important-button"><a href"pages/program.php">See More</a></div>
+                      <div class="important-button"><a href"program.php">See More</a></div>
                     </div>
                   </div>
               </div>
