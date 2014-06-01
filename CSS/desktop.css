@@ -1,5 +1,5 @@
 @media only screen and (min-width:760px) and (max-width:950px){
-	
+
 #all-content-wrapper {
 	width:95%;
 
@@ -51,6 +51,10 @@ HEADER
 =======================
 */
 
+
+#instafeed{
+	height: 600px;
+}
 
 #main-logo {
 	max-width:300px;
@@ -111,7 +115,7 @@ Homepage sections
 	margin:2em 0;
 	overflow: auto;
 }
-	
+
 .homepage-title{
 	padding:1em 0;
 	border-top:1px solid #333;
@@ -159,7 +163,7 @@ div#venues div.table-box {
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	-o-background-size: cover; 
+	-o-background-size: cover;
 }
 
 div.table-box.pumpehuset {background-image:url('../images/venues/pumpehuset.png');}
@@ -226,8 +230,8 @@ div#connect div.table-box {
 	padding:0 10px;
 }
 
-.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] { 
-	width: 100% !important; 
+.fb-like-box, .fb-like-box span, .fb-like-box span iframe[style] {
+	width: 100% !important;
 }
 
 #news-box p {
