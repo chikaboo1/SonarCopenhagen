@@ -98,7 +98,7 @@ include ("php/functions.php");
              <p class="nowrap desktop-show">4 days. 8 venues. 120 artists. 1 experience.</p>
              <p class="nowrap" id="sonarcph">Sonar Copenhagen</p>
              <p class="nowrap" id="sonardates">October 16th-19th</p>
-             <p><div class="buy"><button class="important-button buy-tickets desktop-show"><a href="tickets.php">Buy tickets</a></button></div><div id="socialmediaicons"><a href="https://www.facebook.com/SonarFestivalOfficialPage" target="_blank"><img class="nav-socialmedia" id="nav-facebook" src="images/social-media/facebook.png"/></a><a href="http://www.soundcloud.com/natasha-natarajan" target="_blank"><img class="nav-socialmedia"class="nav-socialmedia"  id="nav-soundcloud" src="images/social-media/soundcloud.png"/></a><a href="https://twitter.com/SonarFestival" target="_blank"><img class="nav-socialmedia" id="nav-twitter" src="images/social-media/twitter.png"/></a></div></p>
+             <p><div class="buy"><button class="important-button buy-tickets"><a href="tickets.php">Buy tickets</a></button></div><div id="socialmediaicons"><a href="https://www.facebook.com/SonarFestivalOfficialPage" target="_blank"><img class="nav-socialmedia" id="nav-facebook" src="images/social-media/facebook.png"/></a><a href="http://www.soundcloud.com/natasha-natarajan" target="_blank"><img class="nav-socialmedia"class="nav-socialmedia"  id="nav-soundcloud" src="images/social-media/soundcloud.png"/></a><a href="https://twitter.com/SonarFestival" target="_blank"><img class="nav-socialmedia" id="nav-twitter" src="images/social-media/twitter.png"/></a></div></p>
             </div>
         </div>
           <nav>

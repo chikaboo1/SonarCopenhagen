@@ -25,6 +25,10 @@ DESKTOP CSS
 	display:block !important;
 }
 
+div.buy {
+	display:inline-block;
+}
+
 .mobile-show {
 	display:none !important;
 }

@@ -12,41 +12,41 @@ include ('header.php');
 <div id="google-maps"><iframe src="https://mapsengine.google.com/map/embed?mid=z5BHJ4rKxSGI.k2PngD4VyH68"></iframe></div>
 
 <h3>Huset</h3>
-<p>Neutra shabby chic butcher locavore Williamsburg selfies. Flexitarian Godard scenester DIY farm-to-table biodiesel lomo. Yr American Apparel Carles farm-to-table mumblecore.</p>
-<p><a href="http://www.huset-kbh.dk">the website</a> / Rådhusstræde 13, København K, Danmark</p>
+<p class="blurb-text">Neutra shabby chic butcher locavore Williamsburg selfies. Flexitarian Godard scenester DIY farm-to-table biodiesel lomo. Yr American Apparel Carles farm-to-table mumblecore.</p>
+<p class="blurb-info"><a href="http://www.huset-kbh.dk">www.huset-kbh.dk</a> / Rådhusstræde 13, København K, Danmark</p>
 
 <h3>Pumpehuset</h3>
-<p>Jean shorts flannel post-ironic Helvetica. 3 wolf moon pour-over synth normcore Austin.</p>
-<p><a href="http://www.pumpehuset.dk">the website</a> / Studiestræde 52, København V, Danmark</p>
+<p class="blurb-text">Jean shorts flannel post-ironic Helvetica. 3 wolf moon pour-over synth normcore Austin.</p>
+<p class="blurb-info"><a href="http://www.pumpehuset.dk">www.pumpehuset.dk</a> / Studiestræde 52, København V, Danmark</p>
 
 
 <h3>Loppen</h3>
-<p>Skateboard actually banh mi, vegan blog seitan art party bicycle rights quinoa Echo Park cornhole plaid selfies drinking vinegar Etsy.</p>
-<p><a href="http://www.loppen.dk">the website</a> / Sydområdet 4B, København, Danmark</p>
+<p class="blurb-text">Skateboard actually banh mi, vegan blog seitan art party bicycle rights quinoa Echo Park cornhole plaid selfies drinking vinegar Etsy.</p>
+<p class="blurb-info"><a href="http://www.loppen.dk">www.loppen.dk</a> / Sydområdet 4B, København, Danmark</p>
 
 
 <h3>Lille Vega</h3>
-<p>Pug Tonx dreamcatcher four loko, lo-fi beard bicycle rights Cosby sweater. Blue Bottle tousled occupy, lomo beard cred High Life 90's banh mi direct trade. </p>
-<p><a href="http://www.vega.dk">the website</a> / Enghavevej 40, København V, Danmark</p>
+<p class="blurb-text">Pug Tonx dreamcatcher four loko, lo-fi beard bicycle rights Cosby sweater. Blue Bottle tousled occupy, lomo beard cred High Life 90's banh mi direct trade. </p>
+<p class="blurb-info"><a href="http://www.vega.dk">http://www.vega.dk</a> / Enghavevej 40, København V, Danmark</p>
 
 <h3>Store Vega</h3>
-<p>Crucifix paleo Thundercats, quinoa meh swag Etsy tote bag next level trust fund. Single-origin coffee Carles swag, lomo hoodie forage seitan.</p>
-<p><a href="http://www.vega.dk">the website</a> / Enghavevej 40, København V, Danmark</p>
+<p class="blurb-text">Crucifix paleo Thundercats, quinoa meh swag Etsy tote bag next level trust fund. Single-origin coffee Carles swag, lomo hoodie forage seitan.</p>
+<p class="blurb-info"><a href="http://www.vega.dk">http://www.vega.dk</a> / Enghavevej 40, København V, Danmark</p>
 
 
 <h3>Forum</h3>
-<p>Truffaut Schlitz Tumblr lo-fi, cray authentic meh Godard banjo. Echo Park banh mi yr kitsch roof party pickled Tonx. Tote bag farm-to-table VHS post-ironic selfies brunch.</p>
-<p><a href="http://www.forumcopenhagen.dk">the website</a>Julius Thomsens Plads 1, Frederiksberg C, Danmark</p>
+<p class="blurb-text">Truffaut Schlitz Tumblr lo-fi, cray authentic meh Godard banjo. Echo Park banh mi yr kitsch roof party pickled Tonx. Tote bag farm-to-table VHS post-ironic selfies brunch.</p>
+<p class="blurb-info"><a href="http://www.forumcopenhagen.dk">www.forumcopenhagen.dk</a> / Julius Thomsens Plads 1, Frederiksberg C, Danmark</p>
 
 
 <h3>Culturebox</h3>
-<p>Polaroid Tumblr PBR&B skateboard. Scenester gastropub ugh jean shorts readymade normcore.</p>
-<p><a href="http://www.culture-box.com">the website</a> / Kronprinsessegade 54, Copenhagen K, Danmark</p>
+<p class="blurb-text">Polaroid Tumblr PBR&B skateboard. Scenester gastropub ugh jean shorts readymade normcore.</p>
+<p class="blurb-info"><a href="http://www.culture-box.com">www.culture-box.com</a> / Kronprinsessegade 54, Copenhagen K, Danmark</p>
 
 
 <h3>Rust</h3>
-<p>blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
-<p><a href="http://www.rust.dk">the website</a> / Guldbergsgade 8, København N, Danmark</p>
+<p class="blurb-text">blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text blurb text</p>
+<p class="blurb-info"><a href="http://www.rust.dk">www.rust.dk</a> / Guldbergsgade 8, København N, Danmark</p>
 
 
 <div id="instafeed" class="desktop-show">

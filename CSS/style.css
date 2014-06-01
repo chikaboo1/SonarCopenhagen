@@ -72,7 +72,7 @@ src: url(../extras/HelveticaNeueLTStd-Hv.otf) format('opentype');
 }
 
 .desktop-show {
-	display:none;
+	display:none ;
 }
 
 
@@ -137,6 +137,11 @@ h3 {
 
 a {
 	text-decoration:none;
+	color:#ff3f34;
+}
+
+a:visited {
+	color:#ff3f34;
 }
 
 a:hover {
@@ -318,7 +323,7 @@ HEADER
 
 div.buy {
 	width:105px;
-	display: inline-block;
+	display: none;
 }
 
 .buy-tickets {
@@ -583,6 +588,11 @@ Information
 =======================
 */
 
+#information h3 {
+	padding-top:10px;
+
+}
+
 #information p.large {
 	padding-bottom:20px;
 }
@@ -607,6 +617,14 @@ Information
 	height:100%;
 }
 
+#information .blurb-text {
+	padding:5px 0;
+}
+
+#information .blurb-info {
+	font-size:0.8em;
+	padding:5px 0;
+}
 /*
 =======================
 Gallery 
