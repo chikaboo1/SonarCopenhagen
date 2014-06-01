@@ -103,14 +103,14 @@ include ("php/functions.php");
         </div>
           <nav>
             <ul id="navigation">
+              <li class="nav-item"><a href="about.php">About</a></li>
               <li class="nav-item"><a href="program.php">Program</a></li>
               <li class="nav-item"><a href="tickets.php">Tickets</a></li>
               <li class="nav-item"><a href="information.php">Information</a></li>
-              <li class="nav-item"><a href="news.php">News</a></li>
               <li class="nav-item"><a href="competition.php">Competitions</a></li>
+              <li class="nav-item"><a href="news.php">News</a></li>
               <li class="nav-item"><a href="gallery.php">Gallery</a></li>
               <li class="nav-item"><a href="sonard.php">Sonar +D</a></li>
-              <li class="nav-item"><a href="about.php">About</a></li>
               <li class="nav-item">Search</li>
 
             </ul>
